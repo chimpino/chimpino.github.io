@@ -484,28 +484,29 @@ mark,
   background-color: #fcf8e3;
 }
 
-  .video-container {
-    aspect-ratio: 16/9;
-    width: 100%;
-    }
+.video-container {
+  aspect-ratio: 16/9;
+  width: 100%;
+  padding-top: 15px;
+}
 
-    .top-padding {
-      padding-top: 65px;
-    }
-    
-    .bottom-padding {
-      padding-bottom: 15px;
-    }
-    
-    .right-letf-0-padding {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-    
-    #links {
-      font-weight: 800;
-    }  
-  
+.top-padding {
+  padding-top: 65px;
+}
+
+.bottom-padding {
+  padding-bottom: 15px;
+}
+
+.right-letf-0-padding {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#links {
+  font-weight: 800;
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -11783,6 +11784,10 @@ button.bg-dark:focus {
 
 .text-center {
   text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
 }
 
 @media (min-width: 576px) {
