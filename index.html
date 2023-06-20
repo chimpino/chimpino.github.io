@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
-    <title>AI Bundle</title>
+    <title>AI Plugin</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
@@ -19,22 +19,25 @@
 
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">AI Bundle</a>
+            <a class="logo" href="#">AI Plugin</a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#about">About</a>
+                    <a class="link" href="#features">Features</a>
                 </li>
-                <!-- <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
-                </li> -->
-                <!-- <li class="item">
-                    <a class="link" href="#testmonial">Testmonial</a>
-                </li> -->
                 <li class="item">
-                    <a class="link" href="#instalation">Instalation</a>
+                    <a class="link" href="#pricing">Pricing</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#documentation">Documentation</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#faq">FAQ</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#roadmap">Roadmap</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#contact">Contact</a>
@@ -52,52 +55,59 @@
     </nav><!-- End of Page Navbar -->
     <!-- page header -->
     <header id="home" class="header">
-        <div class="overlay"></div>
         <div class="header-content container text-center">
             <h1 class="header-title ">
                 <span class="up">AI Plugin for Mautic&reg;</span>
-                <span>AI Bundle implements OpenAI to Mautic&reg;.</span>
+                <span>AI Plugin implements OpenAI to Mautic&reg;.</span>
             </h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/iGqpXQMM9FQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
         </div>
     </header><!-- end of page header -->
 
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div>
-                <h6 class="section-title mb-6">See what AI Bundle can do</h6>
-            </div>
-            <div>
-                <span id="left-align">This is easy prompt.</span>
-            </div>
-            <div class="about">
-                <div class="prompt-img">
-                    <img src="assets/imgs/ai-prompt.png" class="ai-screenshot about-img">
-                </div>
-            </div><!-- end of about wrapper -->
-            <div>
-                <span id="left-align">This is response from ChatGPT.</span>
-            </div>
-            <div class="about">
-                <div class="prompt-img">
-                    <img src="assets/imgs/ai-response.png" class=" about-img">
-                </div>
-            </div>
+    <section class="section pt-0 container text-center">
+        <div class="video-container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aVacdUSrmqs?rel=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen modestbranding="1">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Features section -->
+    <section class="section" id="features">
+        <div class="container pt-0">
+            <h2>Features</h2>
+            <p>The Chimpino AI Plugin has a basic set of features already and more will come in time.</p>
+            <h4>Generate email content</h4>
+            <p>API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as
+                Chat GPT. So you can test what contents this AI model generates even without this plugin. It is as
+                powefrul as having a copywriter on your team. It can generate as entertaining emails as you ask it
+                to.
+            </p>
+            <h4>Translations, A/B tests generated in seconds</h4>
+            <p>Once you are happy with your email content, Mautic natively allows you to create A/B tests or
+                translations. Just prompt the plugin to build the same content but in another language. The GPT
+                model can communicate in more than 95 languages. It's like having a translator on your team 24/7.
+            </p>
+            <h4>Template design</h4>
+            <p>Mautic lets you select a theme. But there is also the "Code Mode" theme option. That basically means
+                that you provide the content together with the HTML theme. The AI Plugin moves this feature to
+                another level as the GPT model can write code as well. So you can describe how the HTML theme should
+                look like and let it do its magic.
+            </p>
+            <h4>Prompt memory</h4>
+            <p>The AI Plugin remembers what prompt and response was used last on each email. The information is
+                stored directly in Mautic's database. So you know how the email came to be even after several years.
+                This is just the beginning. See the roadmap for more details.
+            </p>
         </div><!-- end of container -->
-    </section> <!-- end of about section -->
+    </section><!-- end of features section -->
 
     <!-- pricing section -->
     <section class="section" id="pricing">
-        <div class="container text-center">
+        <div class="container text-center pt-0">
             <p class="section-subtitle">Do you want to support us ?</p>
             <h6 class="section-title mb-6">Pricing</h6>
-            <!-- row -->
             <div>
                 <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
                 <stripe-pricing-table pricing-table-id="prctbl_1NIdxzDe6Bz3HFJoDWtWURdC"
@@ -107,47 +117,172 @@
         </div> <!-- end of container -->
     </section><!-- end of pricing section -->
 
-    <!-- contact section -->
-    <section class="section" id="instalation">
-        <div class="container text-center">
-            <h6 class="section-title mb-5">Instalation instructions</h6>
-            <!-- instalation instructions -->
-            <div class="mb-7" id="inst-instructions">
-                <ol class="mb-7">
-                    <li class="mb-7">
-                        download package
-                    </li>
+    <!-- documentation section -->
+    <section class="section" id="documentation">
+        <div class="container pt-0">
+            <h2>Documentation</h2>
+            <div class="container" id="instalation">
+                <h3>Installation</h3>
+                <p>Once you become our member, you receive an email with a link to download the latest version
+                    of
+                    the AI
+                    bundle. It will be a zip package. Here is how you install it to your Mautic instance.
+                </p>
+                <h4>Using S/FTP</h4>
+                <ol>
+                    <li>Upload the zip package to the <code> plugins</code> directory.</li>
+                    <li>Unzip the package in the <code> plugins</code> directory.</li>
+                    <li>Go to Plugins in the Mautic administration and click on the "Install/Update plugins"
+                        button.</li>
                 </ol>
+                <h4>Using command line</h4>
+                <p>Please modify the commands according to your login details and correct paths.</p>
+                <ol>
+                    <li><code>scp ~/Downloads/AiBundle.zip username@host:/var/www/yourmautic/plugins</code></li>
+                    <li><code>ssh username@host:/var/www/yourmautic/plugins</code></li>
+                    <li><code>unzip AiBundle.zip</code></li>
+                    <li><code>bin/console mautic:plugins:install</code></li>
+                </ol>
+            </div><!-- end of container -->
+
+            <div class="container" id="configuration">
+                <div>
+                    <h3>Configuration</h3>
+                    <p>Once the plugin is installed, go the plugins list. You should see the AI Plugin within
+                        your
+                        other
+                        plugins. Open it to insert the API key. Go to <a
+                            href="https://platform.openai.com/account/api-keys "
+                            id="links">https://platform.openai.com/account/api-keys</a> to
+                        generate your API key. Insert this API key to the plugin, switch the plugin to be
+                        enabled
+                        and you
+                        are ready to start generating some amazing emails.</p>
+                </div>
+            </div><!-- end of container -->
+            <div class="container">
+                <p>The tab Generated by AI is placed in the email editation of Mautic app. The tab Generated by AI
+                    contans prompt and the response from OpenAI.
+                    Prompt engineering tips are in the right corner of the tab.
+                </p>
             </div>
-            </form><!-- end of instalation form -->
-        </div><!-- end of container -->
-    </section><!-- end of instalation section -->
-    <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+            <div class="container text-center bottom-padding">
+                <div class="about">
+                    <div class="prompt-img">
+                        <img src="assets/imgs/ai-prompt-html.png" class="ai-screenshot about-img">
                     </div>
                 </div>
-            </form><!-- end of contact form -->
+            </div>
+            <div class="container ">
+                <p>The way how new tab Generated by AI looks like depends on chosen template.
+                    If you choose Code Mode template, you can't choose the option "Insert into selected theme", because
+                    the email is automaticly placed to HTML template.
+                    The option "Insert into selected theme is placed above "Generate email" button.
+                </p>
+            </div>
+            <div class="container text-center bottom-padding">
+                <div class="about">
+                    <div class="prompt-img">
+                        <img src="assets/imgs/ai-prompt.png" class="ai-screenshot about-img">
+                    </div>
+                </div>
+            </div>
+            <div class="container ">
+                <p>Here is the response from ChatGPT with Code mode template.</p>
+            </div>
+            <div class="container text-center bottom-padding right-letf-0-padding">
+                <div class="about">
+                    <div class="prompt-img">
+                        <img src="assets/imgs/ai-response.png" class=" about-img">
+                    </div>
+                </div>
+            </div>
+        </div><!-- end of container -->
+    </section> <!-- end of documentation section -->
+
+    <!-- faq section -->
+    <section class="section" id="faq">
+        <div class="container pt-0">
+            <h2>FAQ</h2>
+            <p><strong>Is the Open AI's service free?</strong>
+            </p>
+            <p>It's free for the first 3 months. After that you'll have to pre-pay some credits. $10 should last you
+                months. Depending on usage. Open AI is also
+                <a href="https://openai.com/blog/function-calling-and-other-api-updates" id="links">constantly
+                    lowering the cost
+                </a> . Learn more on their
+                <a href="https://openai.com/pricing" id="links"><strong>pricing page</strong>
+                </a>.
+            </p>
+
+            <p><strong>Why did you go with the subscription payment model over one time payment?</strong></p>
+            <p>We are going for a sustainable monetization model. We want to evolve this plugin and add even more
+                value to our members over time. See the Roadmap for what we plan. We are sure our members will
+                appreciate that the plugin will get:
+            </p>
+            <ul>
+                <li>bug and security fixes</li>
+                <li>updates for new PHP and Mautic versions</li>
+                <li>support</li>
+            </ul>
+            <p>The subscription model will allow us to do that.</p>
+            <p>Of course you can cancel the subscription any time and get just one year of updates.</p>
+        </div><!-- end of container -->
+    </section><!-- end of faq section -->
+
+    <!-- roadmap section -->
+    <section class="section" id="roadmap">
+        <div class="container pt-0">
+            <h2>Roadmap</h2>
+            <p>There are many features that will come in the future versions. We'll update the capabilities as Open
+                AI will release more powerful models. The plugin itself will evolve too. Here are some features that
+                we want to use ourselves and we can't wait to hear the ideas our customers will request. We'll keep
+                this list updated.</p>
+
+            <h4>Support for Landing Pages</h4>
+            <p>The same way we've implemented the GPT model for emails, we want to do the same for Landing pages.
+            </p>
+
+            <h4>Prompt history</h4>
+            <p>The plugin can already remember the prompts and responses you are using and it will show you the
+                latest one. But it would be cool if you could see the history of previous prompts you've used on
+                each particular email.</p>
+
+            <h4>Prompt library</h4>
+            <p>Writing a good prompt is not that simple. We should not start from scratch every time. We plan a
+                prompt library where you could categorize the prompts you are proud of and reuse them as a starting
+                point for new emails or landing pages.</p>
+
+            <h4>Email subject generation</h4>
+            <p>Once you are done with your content the GPT model could also give you a selection of top 5 subjects
+                that you could choose from.</p>
+
+            <h4>Support for Mautic 5</h4>
+            <p>Mautic 5 is close to an alpha version (written on June 15) and we want to prepare a version for the
+                fresh Mautic 5 as well.</p>
+
+            <h4>Speech to text</h4>
+            <p>Typing is slow and inconvenient. Why wouldn't we just dictate our prompts instead?</p>
+
+            <h4>Image generation</h4>
+            <p>Generating text is a big deal for marketers. But text isn't the only content the AI models can
+                generate these days. One image is worth a 1000 words.</p>
+                
+            <h4>Report generation</h4>
+            <p>
+                We'd like to explore how well we can use AI to generate reports from a user prompt. It would be
+                exciting to get this working.</p>
+        </div><!-- end of container -->
+    </section><!-- end of faq section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container pt-0">
+            <h2>Contact</h2>
+            <script type="text/javascript" src="//m.chimpino.com/form/generate.js?id=1" class="section pt-0"
+                id="contact"></script>
         </div><!-- end of container -->
     </section><!-- end of contact section -->
-
     <!-- footer -->
     <div class="container">
         <footer class="footer">
@@ -177,6 +312,14 @@
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
 
+    <script>
+            (function (w, d, t, u, n, a, m) {
+                w['MauticTrackingObject'] = n;
+                w[n] = w[n] || function () { (w[n].q = w[n].q || []).push(arguments) }, a = d.createElement(t),
+                    m = d.getElementsByTagName(t)[0]; a.async = 1; a.src = u; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://m.chimpino.com/mtc.js', 'mt');
+        mt('send', 'pageview');
+    </script>
 </body>
 
 </html>

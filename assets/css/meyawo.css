@@ -484,6 +484,28 @@ mark,
   background-color: #fcf8e3;
 }
 
+  .video-container {
+    aspect-ratio: 16/9;
+    width: 100%;
+    }
+
+    .top-padding {
+      padding-top: 65px;
+    }
+    
+    .bottom-padding {
+      padding-bottom: 15px;
+    }
+    
+    .right-letf-0-padding {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    
+    #links {
+      font-weight: 800;
+    }  
+  
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -12223,6 +12245,7 @@ p {
 .mb-6 {
   margin-bottom: 4rem !important;
 }
+
 .mb-7 {
   margin-bottom: 3rem !important;
 }
@@ -12413,8 +12436,8 @@ p {
   margin: 15px 0;
 }
 
-span#left-align{
-  display:flex;
+span#left-align {
+  display: flex;
   margin: 20px 0px 20px 0px;
 }
 
@@ -12740,9 +12763,10 @@ pre .code {
   -webkit-transition-delay: 0.075s;
   transition-delay: 0.075s;
 }
-#instructions{
-text-align: left;
-font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
+
+#instructions {
+  text-align: left;
+  font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
 
 }
 
@@ -13199,8 +13223,8 @@ font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
 
 .header {
   position: relative;
-  height: 80vh;
-  min-height: 600px;
+  height: 400px;
+  min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -13362,7 +13386,7 @@ font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
 
 /* sections */
 .section {
-  padding: 70px 10px;
+  padding: 90px 10px 0px 10px;
 }
 
 .section .section-title {
