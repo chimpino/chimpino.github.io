@@ -101,6 +101,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+
 li {
   font-weight: 100;
 }
@@ -489,16 +490,16 @@ mark,
 
 .video-container {
   position: relative;
-  aspect-ratio: 16/9;
-  width: 60%;
-  padding-top: 20px;
+  height: 0;
+  padding-bottom: 45.5%;
 }
 
-.video-container iframe { 
-  top: 15px;
+.video-container iframe {
+position: absolute;
+  top: 0;
   left: 0;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
 
 .top-padding {
@@ -13403,6 +13404,9 @@ pre .code {
 /* sections */
 .section {
   padding: 90px 10px 0px 10px;
+}
+.section-youtube {
+  padding: 40px 10px 0px 10px;
 }
 
 .section .section-title {
