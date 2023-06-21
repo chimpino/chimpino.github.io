@@ -489,20 +489,8 @@ mark,
 }
 
 .video-container {
-  position: relative;
-  height: 0;
-  overflow:hidden;
-  padding-bottom: 45.5%;
-}
-
-.video-container iframe {
-  max-width: 650px;
-  max-height: 315px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .top-padding {
