@@ -492,7 +492,8 @@ mark,
   display: flex;
   justify-content: center;
 }
-.video-container iframe{
+
+.video-container iframe {
   margin: auto;
 }
 
@@ -13425,4 +13426,100 @@ pre .code {
 
 .section-lg {
   padding: 100px 0 !important;
+}
+
+/* cookies */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.cookies-wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: -370px;
+  max-width: 345px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  border: solid #1b037a;
+  padding: 15px 25px 22px;
+  transition: right 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  opacity: .8;
+}
+
+.cookies-wrapper.show {
+  right: 30px;
+}
+
+.cookies-wrapper header {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.cookie-header h2 {
+  color: #1b037a;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.cookies-wrapper .data {
+  margin-top: 16px;
+}
+
+.cookies-wrapper .data p {
+  color: #333;
+  font-size: 16px;
+}
+
+.data p a {
+  color: #1b037a;
+  text-decoration: none;
+}
+
+.data p a:hover {
+  text-decoration: underline;
+}
+
+.cookies-wrapper .buttons {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons .button {
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 4px;
+  background: #1b037a;
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  transition: all 0.2s ease;
+}
+
+.buttons #acceptBtn:hover {
+  background-color: #034bf1;
+}
+
+#declineBtn {
+  border: 2px solid #1b037a;
+  background-color: #fff;
+  color: #1b037a;
+}
+
+#declineBtn:hover {
+  background-color: #1b037a;
+  color: #fff;
 }
