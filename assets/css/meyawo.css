@@ -492,6 +492,9 @@ mark,
   display: flex;
   justify-content: center;
 }
+.video-container iframe{
+  margin: auto;
+}
 
 .top-padding {
   padding-top: 65px;
