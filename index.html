@@ -146,7 +146,7 @@
                     bundle. It will be a zip package. Here is how you install it to your Mautic instance.
                 </p>
                 <h4>Using S/FTP</h4>
-                <ol>
+                <ol class="container">
                     <li>Upload the zip package to the <code> plugins</code> directory.</li>
                     <li>Unzip the package in the <code> plugins</code> directory.</li>
                     <li>Go to Plugins in the Mautic administration and click on the "Install/Update plugins"
@@ -154,7 +154,7 @@
                 </ol>
                 <h4>Using command line</h4>
                 <p>Please modify the commands according to your login details and correct paths.</p>
-                <ol>
+                <ol class="container">
                     <li><code>scp ~/Downloads/AiBundle.zip username@host:/var/www/yourmautic/plugins</code></li>
                     <li><code>ssh username@host:/var/www/yourmautic/plugins</code></li>
                     <li><code>unzip AiBundle.zip</code></li>
@@ -183,7 +183,7 @@
             <div class="container text-center bottom-padding">
                 <div class="about">
                     <div class="prompt-img">
-                        <img src="assets/imgs/ai-prompt-html.png" class="ai-screenshot about-img">
+                        <img src="assets/imgs/ai-prompt.png" class="ai-screenshot about-img">
                     </div>
                 </div>
             </div>
@@ -194,6 +194,9 @@
                     the prompt response. The "Show Source Code" button appears if you can see the email preview. The
                     "Show Preview" button appears if you can see the source code.
                 </p>
+                <p>
+                    You can resend the prompt request if you do not like the response from Open AI. For listing between responses there are tabs "Earlier Prompt" and "Later prompt" responses.
+                </p>
             </div>
             <div class="container text-center right-letf-0-padding">
                 <div class="about">
@@ -202,10 +205,23 @@
                     </div>
                 </div>
             </div>
-            <div class="container ">
+            <div class="container">
                 <p>The button "Open in Builder" is placed under the Chat GPT response (Email preview or Source code) and
                     it allows you to insert the code into
                     Builder where you can edit the email.</p>
+            </div>
+            <div class="container">
+                <h3>Templates</h3>
+                <p> AI Plugin works with Mautic's templates, but responses from Open AI are long and you use much more tokens. You can download light version of templates:
+                </p>
+                <ul class="container">
+                    <li><a href="https://m.chimpino.com/asset/7:paprika-lightzip"
+                        id="links">Paprika Light
+                    </a></li>
+                    <li> <a href="https://m.chimpino.com/asset/6:brienz-lightzip"
+                        id="links">Brienz Light 
+                    </a></li>
+                </ul>
             </div>
         </div><!-- end of container -->
     </section> <!-- end of documentation section -->
@@ -219,8 +235,7 @@
             <p>It's free for the first 3 months. After that you'll have to pre-pay some credits. $10 should last you
                 months. Depending on usage. Open AI is also
                 <a href="https://openai.com/blog/function-calling-and-other-api-updates" id="links">constantly
-                    lowering the cost
-                </a>. Learn more on their
+                    lowering the cost</a>. Learn more on their
                 <a href="https://openai.com/pricing" id="links"><strong>pricing page</strong></a>.
             </p>
 
@@ -230,7 +245,7 @@
                 members will
                 appreciate that the plugin will get:
             </p>
-            <ul>
+            <ul class="container">
                 <li>new features</li>
                 <li>bug and security fixes</li>
                 <li>updates for new PHP and Mautic versions</li>
@@ -248,7 +263,7 @@
                 get it done.
                 To convert time to money, let's say that your hourly rate is $50. So you <b>save $25 per email</b>.
                 Here is how long it will take to get your investment back per plan:
-            <ul>
+            <ul class="container">
                 <li>for 1 Mautic instance plan that costs $89 then it will take you 4 emails to get your investment
                     back.</li>
                 <li>for 5 Mautic instances plan that costs $140 then it will take you little over 1 email to get your
@@ -327,7 +342,7 @@
     <!-- contact section -->
     <section class="section" id="contact">
         <div class="container pt-0">
-            <h2>Contact</h2>
+            <!-- <h2>Contact</h2> -->
             <script type="text/javascript" src="//m.chimpino.com/form/generate.js?id=1" class="section pt-0"
                 id="contact"></script>
         </div><!-- end of container -->
