@@ -493,6 +493,10 @@ mark,
   justify-content: center;
 }
 
+.youtube-video {
+  margin-bottom: 0.5rem;
+}
+
 .video-container iframe {
   margin: auto;
 }
