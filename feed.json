@@ -1,0 +1,69 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Chimpino",
+    "description": "",
+    "home_page_url": "https://chimpino.com",
+    "feed_url": "https://chimpino.com/feed.json",
+    "user_comment": "",
+    "icon": "https://chimpino.com/media/website/chimpino-logo.png",
+    "author": {
+        "name": "Jan Linhart"
+    },
+    "items": [
+        {
+            "id": "https://chimpino.com/stripe-plugin.html",
+            "url": "https://chimpino.com/stripe-plugin.html",
+            "title": "Stripe Plugin",
+            "summary": "Stripe plugin allows your Mautic instance to react on Stripe webhooks and more.",
+            "content_html": "<p>Stripe plugin allows your Mautic instance to react on Stripe webhooks and more.</p>",
+            "author": {
+                "name": "Jan Linhart"
+            },
+            "tags": [
+            ],
+            "date_published": "2023-09-19T19:04:16+02:00",
+            "date_modified": "2023-09-19T19:04:16+02:00"
+        },
+        {
+            "id": "https://chimpino.com/ai-plugin.html",
+            "url": "https://chimpino.com/ai-plugin.html",
+            "title": "AI Plugin",
+            "summary": "Implements OpenAI's Chat GPT to Mautic® Features Generate email content API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as Chat GPT. So you can test what contents this AI model generates even without this plugin.",
+            "content_html": "<h1 class=\"header-title \">Implements OpenAI's Chat GPT to Mautic®</h1>\n<h2>Features</h2>\n<h4>Generate email content</h4>\n<p>API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as Chat GPT. So you can test what contents this AI model generates even without this plugin. It is as powerful as having a copywriter on your team. It can generate as entertaining emails as you ask it to.</p>\n<h4>Templates</h4>\n<div class=\"post__iframe\"><iframe loading=\"lazy\" width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/UfhRIlKUiro?si=4EQO6R6LtNSM4b7r\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\"></iframe></div>\n<p>The AI Plugin works well with Mautic's templates. We recommend you to use the following lighter templates with the AI Plugin to save money on the Open AI's credits:</p>\n<ul class=\"container\">\n<li><a href=\"https://m.chimpino.com/asset/7:paprika-lightzip\" id=\"links\">Paprika Light</a></li>\n<li><a href=\"https://m.chimpino.com/asset/6:brienz-lightzip\" id=\"links\">Brienz Light</a></li>\n</ul>\n<p>Those tokens are based on the original Mautic templates but all the demo content was removed so they are way smaller then the stock Mautic templates.</p>\n<h4>Code Mode and MJML</h4>\n<p>Mautic's Code Mode allows you to copy-paste your own template. With AI plugin you can describe how the template should look like and let it generate the template for you.</p>\n<p>The template will be written in <a href=\"https://mjml.io/\">MJML</a> instead of classic HTML so you can be sure that it will be responsive and rendered the same way for every email provider and every inbox.</p>\n<p>Furthermore, it will allow you to edit the email in the Email Builder like any other MJML template so you don't have to edit the source code.</p>\n<h4>Translations, A/B tests generated in seconds</h4>\n<p>Once you are happy with your email content, Mautic natively allows you to create A/B tests or translations. Just prompt the plugin to build the same content but in another language. The GPT model can communicate in more than 95 languages. It's like having a translator on your team 24/7.</p>\n<h4>Prompt memory</h4>\n<p>The AI Plugin remembers what prompt and response was used last on each email. The information is stored directly in Mautic's database. So you know how the email came to be even after several years. You can browse the history of the prompts and responses so you can get back to a previous version that you liked better.</p>",
+            "author": {
+                "name": "Jan Linhart"
+            },
+            "tags": [
+            ],
+            "date_published": "2023-09-19T14:40:33+02:00",
+            "date_modified": "2023-09-19T14:45:58+02:00"
+        },
+        {
+            "id": "https://chimpino.com/contacts.html",
+            "url": "https://chimpino.com/contacts.html",
+            "title": "Contacts",
+            "content_html": "<p>\n<script type=\"text/javascript\" src=\"//m.chimpino.com/form/generate.js?id=1\" class=\"section pt-0\" id=\"contact\"></script>\n</p>",
+            "author": {
+                "name": "Jan Linhart"
+            },
+            "tags": [
+            ],
+            "date_published": "2023-09-19T14:04:25+02:00",
+            "date_modified": "2023-09-19T18:53:55+02:00"
+        },
+        {
+            "id": "https://chimpino.com/home.html",
+            "url": "https://chimpino.com/home.html",
+            "title": "Home",
+            "summary": "Test article?",
+            "content_html": "\n  <p>\n    Test article?\n  </p>",
+            "author": {
+                "name": "Jan Linhart"
+            },
+            "tags": [
+            ],
+            "date_published": "2023-09-19T13:55:12+02:00",
+            "date_modified": "2023-09-19T13:55:45+02:00"
+        }
+    ]
+}
