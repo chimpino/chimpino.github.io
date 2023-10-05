@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-09-21T11:41:59+02:00</updated>
+    <updated>2023-10-05T14:10:03+02:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://chimpino.com/about-us.html"/>
         <id>https://chimpino.com/about-us.html</id>
 
-        <updated>2023-09-21T11:41:59+02:00</updated>
+        <updated>2023-10-05T14:00:34+02:00</updated>
             <summary>
                 <![CDATA[
                     Who is Chimpino Chimpino is two software ingeneers located in Prague in the Czech republic. We are making plugins for open source software Mautic®. We want to make lives easier to our customers. Jan is the brain of the Chimpino with many and many years&hellip;
@@ -273,10 +273,10 @@
         <link href="https://chimpino.com/home.html"/>
         <id>https://chimpino.com/home.html</id>
 
-        <updated>2023-09-21T10:20:08+02:00</updated>
+        <updated>2023-10-05T14:10:03+02:00</updated>
             <summary>
                 <![CDATA[
-                    Test article?
+                    Test article? tlkajslkfjalskjflsjdflksdjflksjfdlksd djflskdjflůsjůlksdjfas
                 ]]>
             </summary>
         <content type="html">
@@ -284,6 +284,14 @@
                 
   <p>
     Test article?
+  </p>
+
+  <p>
+    tlkajslkfjalskjflsjdflksdjflksjfdlksd
+  </p>
+
+  <p>
+    djflskdjflůsjůlksdjfas
   </p>
             ]]>
         </content>
