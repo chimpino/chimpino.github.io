@@ -1,112 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-    <title>Chimpino</title>
+    <title>https://github.com/chimpino/chimpino.github.io</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-09-19T19:04:16+02:00</updated>
+    <updated>1970-01-01T01:00:00+01:00</updated>
     <author>
-        <name>Jan Linhart</name>
+        <name>D</name>
     </author>
     <id>https://chimpino.com</id>
 
-    <entry>
-        <title>Stripe Plugin</title>
-        <author>
-            <name>Jan Linhart</name>
-        </author>
-        <link href="https://chimpino.com/stripe-plugin.html"/>
-        <id>https://chimpino.com/stripe-plugin.html</id>
-
-        <updated>2023-09-19T19:04:16+02:00</updated>
-            <summary>
-                <![CDATA[
-                    Stripe plugin allows your Mautic instance to react on Stripe webhooks and more.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Stripe plugin allows your Mautic instance to react on Stripe webhooks and more.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>AI Plugin</title>
-        <author>
-            <name>Jan Linhart</name>
-        </author>
-        <link href="https://chimpino.com/ai-plugin.html"/>
-        <id>https://chimpino.com/ai-plugin.html</id>
-
-        <updated>2023-09-19T14:45:58+02:00</updated>
-            <summary>
-                <![CDATA[
-                    Implements OpenAI's Chat GPT to Mautic® Features Generate email content API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as Chat GPT. So you can test what contents this AI model generates even without this plugin.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h1 class="header-title ">Implements OpenAI's Chat GPT to Mautic®</h1>
-<h2>Features</h2>
-<h4>Generate email content</h4>
-<p>API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as Chat GPT. So you can test what contents this AI model generates even without this plugin. It is as powerful as having a copywriter on your team. It can generate as entertaining emails as you ask it to.</p>
-<h4>Templates</h4>
-<div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UfhRIlKUiro?si=4EQO6R6LtNSM4b7r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe></div>
-<p>The AI Plugin works well with Mautic's templates. We recommend you to use the following lighter templates with the AI Plugin to save money on the Open AI's credits:</p>
-<ul class="container">
-<li><a href="https://m.chimpino.com/asset/7:paprika-lightzip" id="links">Paprika Light</a></li>
-<li><a href="https://m.chimpino.com/asset/6:brienz-lightzip" id="links">Brienz Light</a></li>
-</ul>
-<p>Those tokens are based on the original Mautic templates but all the demo content was removed so they are way smaller then the stock Mautic templates.</p>
-<h4>Code Mode and MJML</h4>
-<p>Mautic's Code Mode allows you to copy-paste your own template. With AI plugin you can describe how the template should look like and let it generate the template for you.</p>
-<p>The template will be written in <a href="https://mjml.io/">MJML</a> instead of classic HTML so you can be sure that it will be responsive and rendered the same way for every email provider and every inbox.</p>
-<p>Furthermore, it will allow you to edit the email in the Email Builder like any other MJML template so you don't have to edit the source code.</p>
-<h4>Translations, A/B tests generated in seconds</h4>
-<p>Once you are happy with your email content, Mautic natively allows you to create A/B tests or translations. Just prompt the plugin to build the same content but in another language. The GPT model can communicate in more than 95 languages. It's like having a translator on your team 24/7.</p>
-<h4>Prompt memory</h4>
-<p>The AI Plugin remembers what prompt and response was used last on each email. The information is stored directly in Mautic's database. So you know how the email came to be even after several years. You can browse the history of the prompts and responses so you can get back to a previous version that you liked better.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Contacts</title>
-        <author>
-            <name>Jan Linhart</name>
-        </author>
-        <link href="https://chimpino.com/contacts.html"/>
-        <id>https://chimpino.com/contacts.html</id>
-
-        <updated>2023-09-19T18:53:55+02:00</updated>
-            <summary></summary>
-        <content type="html">
-            <![CDATA[
-                <p>
-<script type="text/javascript" src="//m.chimpino.com/form/generate.js?id=1" class="section pt-0" id="contact"></script>
-</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Home</title>
-        <author>
-            <name>Jan Linhart</name>
-        </author>
-        <link href="https://chimpino.com/home.html"/>
-        <id>https://chimpino.com/home.html</id>
-
-        <updated>2023-09-19T13:55:45+02:00</updated>
-            <summary>
-                <![CDATA[
-                    Test article?
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    Test article?
-  </p>
-            ]]>
-        </content>
-    </entry>
 </feed>
