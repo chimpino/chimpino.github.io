@@ -3,21 +3,49 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-10-09T10:56:42+02:00</updated>
+    <updated>2023-10-23T16:12:05+02:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
     <id>https://chimpino.com</id>
 
     <entry>
+        <title>Home</title>
+        <author>
+            <name>Jan Linhart</name>
+        </author>
+        <link href="https://chimpino.com/home-2/"/>
+        <id>https://chimpino.com/home-2/</id>
+
+        <updated>2023-10-23T14:32:53+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Plugins for Mautic® We want you to make your life easier. With our plugins you can make sleep better with work done for you. Right now we have: AI Plugin Stripe Plugin
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="plugins-forandnbspmauticr" class="align-center">Plugins for Mautic®</h2>
+<p>We want you to make your life easier. With our plugins you can make sleep better with work done for you.</p>
+<p>Right now we have:</p>
+<div>
+<ul>
+<li><a href="https://chimpino.com/ai-plugin/">AI Plugin</a><a href="{{ai-plugin}}" id="links"></a></li>
+<li><a href="https://chimpino.com/stripe-plugin/">Stripe Plugin</a></li>
+</ul>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
         <title>About Us</title>
         <author>
             <name>Jan Linhart</name>
         </author>
-        <link href="https://chimpino.com/about-us.html"/>
-        <id>https://chimpino.com/about-us.html</id>
+        <link href="https://chimpino.com/about-us/"/>
+        <id>https://chimpino.com/about-us/</id>
 
-        <updated>2023-10-06T09:48:59+02:00</updated>
+        <updated>2023-10-23T14:33:46+02:00</updated>
             <summary>
                 <![CDATA[
                     Who is Chimpino Chimpino is two software ingeneers located in Prague in the Czech republic. We are making plugins for open source software Mautic®. We want to make lives easier to our customers. Jan is the brain of the Chimpino with many and many years&hellip;
@@ -27,7 +55,6 @@
             <![CDATA[
                 <h2>Who is Chimpino</h2>
 <p>Chimpino is two software ingeneers located in Prague in the Czech republic. We are making plugins for open source software Mautic®. We want to make lives easier to our customers.</p>
-<p> </p>
 <h2>Jan Linhart</h2>
 <p>Jan is the brain of the Chimpino with many and many years of experience as a software developer and he is full time developer.</p>
 <h2>Dana Linhartová</h2>
@@ -42,8 +69,8 @@
         <author>
             <name>Jan Linhart</name>
         </author>
-        <link href="https://chimpino.com/terms.html"/>
-        <id>https://chimpino.com/terms.html</id>
+        <link href="https://chimpino.com/terms/"/>
+        <id>https://chimpino.com/terms/</id>
 
         <updated>2023-09-21T11:26:17+02:00</updated>
             <summary>
@@ -79,10 +106,10 @@
         <author>
             <name>Jan Linhart</name>
         </author>
-        <link href="https://chimpino.com/stripe-plugin.html"/>
-        <id>https://chimpino.com/stripe-plugin.html</id>
+        <link href="https://chimpino.com/stripe-plugin/"/>
+        <id>https://chimpino.com/stripe-plugin/</id>
 
-        <updated>2023-10-09T10:56:42+02:00</updated>
+        <updated>2023-10-23T16:12:05+02:00</updated>
             <summary>
                 <![CDATA[
                     Implements Stripe payment service provider to Mautic® Stripe Plugin allows you to implement online payment processing and credit card processing platform for your business. Your Mautic instance can react in your campaign on Stripe webhooks. You can set your campaign to catch events. We watch&hellip;
@@ -103,7 +130,7 @@
 <li>customer.subscription.updated,</li>
 <li>invoice.paid.</li>
 </ul>
-<p>Once you make condition to listen some events Mautic will make setted up actin. For example if you want to send confirmation email to customer after customer updates personal information, you just let Mautic listen customer.updated event.</p>
+<p>Once you make condition to listen some events Mautic will make set up actin. For example if you want to send confirmation email to customer after customer updates personal information, you just let Mautic listen customer.updated event.</p>
 <h2>Pricing</h2>
 <p><stripe-pricing-table> will be added</stripe-pricing-table></p>
 <p> </p>
@@ -126,50 +153,102 @@
 <li><code>bin/console mautic:plugins:install</code></li>
 </ol>
 </div>
-<div id="configuration" class="container">
+<p>You should see all new segments if the installation of the plugin was made properly. You can check it in the Segments section on the left menu:</p>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-19-at-11.42.03.png" alt="" width="1970" height="588" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-2xl.png 1600w"></figure>
 <h3>Configuration</h3>
-<p>Once the plugin is installed, go the plugins list. You should see the Stripe Plugin within your other plugins.</p>
-<h3>Signing</h3>
-<p>You can verify caught webhooks. Go to plugins list and open Stripe Plugin, where you can insert the Secret key from your Stripe app. Go to <a href="https://dashboard.stripe.com/apikeys" id="links">https://dashboard.stripe.com/apikeys </a>to reveal your Secret key. Insert this secret key to the plugin, switch the plugin to be enabled and you are ready to verify your caught events, that they are not fraud. </p>
-<h3>Create token</h3>
-<p>vytvořit token,</p>
-<h3>Segment filter</h3>
-<p>segment filter máme</p>
-<h3>Campaign condition</h3>
+<p>Once the plugin is installed, go the plugins list. You should see the Stripe Plugin within your other plugins. You can save your test and production Secret key.</p>
+<h4>Signing</h4>
+<p>You can verify caught webhooks. Go to plugins list and open Stripe Plugin, where you can insert the Secret key from your Stripe app. Go to Developers section and to API keys tab (<a href="https://dashboard.stripe.com/apikeys" id="links">https://dashboard.stripe.com/apikeys</a>) to reveal your Secret key (if you are in test mode you will see only testing Secret key and if you are in production mode you will only production Secret key). Insert secret key to the plugin, switch the plugin to be enabled and now you are ready to verify your caught events, that they are not fraud. </p>
+<h4>Segment filter</h4>
+<p>You can make campaign based on segment. You can choose from Customer Created, Customer Updated, Customer Subscription Created, Customer Subscription Updated, Invoice Paid. </p>
+<h4>Campaign condition</h4>
 <p>You can use webhooks in your campaign. Click Campaign section and add new campaign as you are used to do. Launch campaign builder and choose the Contact segments which you are interested in. Then you can make some Action/Decision/Condition based on caught event.</p>
+<h4>Webhook testing</h4>
+<p>You can test your Stripe setting. First you have to click to <span style="color: #3598db;">Test mode</span> switcher in the Stripe app. Then click to Developer options and then to Webhook tab as you can see below.</p>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-09-19-at-10.19.10.png" alt="" width="2664" height="1456" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-2xl.png 1600w"></figure>
+<p>Than you can Add an endpoint.</p>
+<p>Now new window will open to you. Insert your endpoint URL address, you can describe what are you exactly testing. Choose Listen to option "Event on your account". Then what events should be listen to in the option:  Select events to listen to. New window will open, where you can choose what you want to listen to (<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.created, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.updated, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.subscription.created, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.subscription.updated or </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">invoice.paid).</span></p>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-23-at-13.15.32.png" alt="" width="455" height="531" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-2xl.png 1600w"></figure>
+<p>With this set up you can go to your Mautic instance and in the menu choose Components. There is Landing pages option. Create new Landing page and insert tokens to builder. You can make <strong><span style="color: #faa90f;">pricing table</span></strong> by inserting this token in to the builder.</p>
+<h5><span style="color: #faa90f;">Pricing table token</span></h5>
+<p>The token consists of three parts:</p>
+<ul>
+<li>stripe (name)</li>
+<li>tableid</li>
+<li>key</li>
+</ul>
+<p><code><span style="color: #2dc26b;">{</span><span style="color: #3598db;">stripe</span><span style="color: #e03e2d;">=</span>pricingtable <span style="color: #3598db;">tableid</span><span style="color: #e03e2d;">=</span>your_pricing_table_id <span style="color: #3598db;">key</span><span style="color: #e03e2d;">=</span>your_public_key<span style="color: #2dc26b;">}</span></code></p>
+<p>Here is the example of pricing table token:</p>
+<p><code>
+        <span style="color: #2dc26b;">{</span><span style="color: #3598db;">stripe</span><span style="color: #e03e2d;">=</span>pricingtable 
+        <span style="color: #3598db;">tableid</span><span style="color: #e03e2d;">=</span>prctbl_1NrOQADr6Bz0HFJp5rYMy0sv 
+        <span style="color: #3598db;">key</span><span style="color: #e03e2d;">=</span>pk_test_51NFhPoDe6Bz3jFroZhz2GfN3eY1754vIGBbJ1GyLhwW0SmTNqc08kfMXpLDGyy0Z4NCfsRzk4Hkp18XyKyrqk1CJ0povwXV0DC
+        <span style="color: #2dc26b;">}</span>
+    </code></p>
+<h6><span style="color: #3598db;">stripe</span></h6>
+<p>Stripe stripe part of the token  is the name of the token and it is always pricing table.</p>
+<h6><span style="color: #3598db;">tableid</span></h6>
+<p>Tableid part is unique for the pricing table. Click to Products tab in the Stripe app. If you do not have any products you have to create some products. Now you can open Pricing tables tab in the Products section. If you already do not have pricing table, you have to create one. Then open the pricing table and there you can see the tableid in the HTML code below.</p>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-20-at-11.21.31.png" alt="" width="1782" height="778" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-11.21.31-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-11.21.31-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-11.21.31-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-11.21.31-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-11.21.31-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-11.21.31-2xl.png 1600w"></figure>
+<h6><span style="color: #e67e23;"><span style="color: #3598db;">key</span></span></h6>
+<p>Key is your publishable key of your Stripe app. Go to Developer tab. Choose API keys and copy the Publishable Key. Or you can copy the publishable key from the definition of the pricing table as you can see in the picture above.</p>
+<p>More about this price table process you can see in the <a href="https://stripe.com/docs/no-code/pricing-table" id="&quot;links">documentation</a>.</p>
+<p>The<strong> <span style="color: #faa90f;">buy button</span></strong> token can be used in the builder to get your payment with.</p>
+<h5><span style="color: #faa90f;">Buy Button token</span> </h5>
+<p>The token consists of three parts:</p>
+<ul>
+<li>stripe (name)</li>
+<li>buttonid</li>
+<li>key</li>
+</ul>
+<p><code><span style="color: #2dc26b;">{</span><span style="color: #3598db;">stripe<span style="color: #e03e2d;">=</span></span>buybutton <span style="color: #3598db;">buttonid<span style="color: #e03e2d;">=</span></span>your_buy_button_id <span style="color: #3598db;">key<span style="color: #e03e2d;">=</span></span>your_public_key<span style="color: #2dc26b;">}</span></code></p>
+<p>Here is the example of buy button token int the builder:</p>
+<p><code>
+        <span style="color: #2dc26b;">{</span><span style="color: #3598db;">stripe</span><span style="color: #e03e2d;">=</span>buybutton 
+        <span style="color: #3598db;">buttonid</span><span style="color: #e03e2d;">=</span>buy_btn_1O2FuLDe6BP3HFJoDlpV9uIg 
+        <span style="color: #3598db;">key</span><span style="color: #e03e2d;">=</span>pk_test_51NFhPoDe6Bz3jFroZhz2GfN3eY1754vIGBbJ1GyLhwW0SmTNqc08kfMXpLDGyy0Z4NCfsRzk4Hkp18XyKyrqk1CJ0povwXV0DC
+        <span style="color: #2dc26b;">}</span>
+    </code></p>
+<h6><span style="color: #3598db;">stripe</span></h6>
+<p>Stripe part of the token is the name of the token and it is always pricing table.</p>
+<h6><span style="color: #3598db;">buttonid</span></h6>
+<p>Buttonid part is unique for the buy button.Got to Stripe app. Choose Payments tab and option Payment links. Make New, there you choose what product should be possible to buy through buy button and confirm it in the right side of the page. Then click to Buy Button as you can see below.</p>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-20-at-10.26.01-2.png" alt="" width="2022" height="484" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.26.01-2-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.26.01-2-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.26.01-2-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.26.01-2-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.26.01-2-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.26.01-2-2xl.png 1600w"></figure>
+<p>You can just copy the buy buttonid from the HTML code below.</p>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-20-at-10.28.35-2.png" alt="" width="1756" height="980" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.28.35-2-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.28.35-2-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.28.35-2-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.28.35-2-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.28.35-2-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-20-at-10.28.35-2-2xl.png 1600w"></figure>
+<h6><span style="color: #3598db;">key</span></h6>
+<p>Key is your publishable key and it is the same as the key in the pricing tableGo to Developer tab. Choose API keys and copy the Publishable Key. Or you can copy the key from HTML code above in the buy button.</p>
+<p>More about this buy button process you can see in the <a href="https://stripe.com/docs/payment-links/buy-button" id="links">documentation</a>.</p>
+<h5><span style="color: #faa90f;">Campaign</span></h5>
+<p>Make campaign in the main menu as usual and use new segments. For example send email with the invoice to the customer if customer buys your product. </p>
+<h5><span style="color: #faa90f;">Landing page</span> </h5>
+<p>If you set up all, you can go to Mautic app and click to Components and Landing Pages in the main menu. Add new landing page and in the builder insert token which you want to use (Pricing table or Buy button). Save it and open through the URL.</p>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-23-at-13.34.57.png" alt="" width="2840" height="1132" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-2xl.png 1600w"></figure>
+<p>Landing page will open with the pricing table or buy button or both. You can "buy" subscription or use buy button virtually.</p>
 <p><span style="color: var(--headings-color); font-family: var(--font-base); font-size: 1.60181em; font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing);">FAQ</span></p>
-</div>
 <div class="container">
 <section id="faq" class="section">
 <div class="container pt-0">
 <h3>Why did you go with the subscription payment model over one time payment?</h3>
-<p>We are going for a sustainable monetisation model. We want to evolve this plugin and add even more value to our members over time. See the Roadmap for what we plan. We are sure our members will appreciate that the plugin will get:</p>
+We are going for a sustainable monetisation model. We want to evolve this plugin and add even more value to our members over time. See the Roadmap for what we plan. We are sure our members will appreciate that the plugin will get:
 <ul class="container">
 <li>new features</li>
 <li>bug and security fixes</li>
 <li>updates for new PHP and Mautic versions</li>
 <li>support</li>
 </ul>
-<p>The subscription model will allow us to do that. As a software users ourselves we hate it when the maintainer of a software we use stops supporting it. We don't want it to happen to our customers.</p>
-<h3>How long will it take to get my investment back?</h3>
-<p>Consider how much faster it will take you to write engaging emails with AI. Let's say that now it takes you 30 minutes to write a nice email. With AI it may take you 5 minutes to get it done. To convert time to money, let's say that your hourly rate is $50. So you <strong>save $25 per email</strong>. Here is how long it will take to get your investment back per plan:</p>
-<ul class="container">
-<li>for 1 Mautic instance plan that costs $89 then it will take you 4 emails to get your investment back.</li>
-<li>for 5 Mautic instances plan that costs $140 then it will take you little over 1 email to get your investment back.</li>
-<li>for 500 Mautic instances plan that costs $500 then it will take you way less than 1 email to get your investment back.</li>
-</ul>
-<p> </p>
-<h3>What if I don't want to pay for the plugin anymore?</h3>
-<p>Of course you can cancel the subscription any time and get just one year of updates. There will be a link to where you can change subscription plans or cancel it completely any time in the payment confirmation email from Stripe.</p>
 </div>
+<div class="container pt-0"><br>The subscription model will allow us to do that. As a software users ourselves we hate it when the maintainer of a software we use stops supporting it. We don't want it to happen to our customers.</div>
+<div class="container pt-0">
+<h3>What if I don't want to pay for the plugin anymore?</h3>
+Of course you can cancel the subscription any time and get just one year of updates. There will be a link to where you can change subscription plans or cancel it completely any time in the payment confirmation email from Stripe.</div>
 </section>
 <section id="roadmap" class="section">
 <div class="container pt-0">
 <h2>Roadmap</h2>
-<p>There are many features that will come in the future versions. We'll update the capabilities as Open AI will release more powerful models. The plugin itself will evolve too. Here are some features that we want to use ourselves and we can't wait to hear the ideas our customers will request. We'll keep this list updated.</p>
+There are many features that will come in the future versions. We'll update the capabilities as Open AI will release more powerful models. The plugin itself will evolve too. Here are some features that we want to use ourselves and we can't wait to hear the ideas our customers will request. We'll keep this list updated.
 <h4>Support for Mautic 5</h4>
-<p>Mautic 5 is close to an alpha version (written on June 15) and we want to prepare a version for the fresh Mautic 5 as well.</p>
-</div>
+Mautic 5 is close to an alpha version (written on June 15) and we want to prepare a version for the fresh Mautic 5 as well.</div>
 </section>
 </div>
 <div class="container text-center bottom-padding">
@@ -183,8 +262,8 @@
         <author>
             <name>Jan Linhart</name>
         </author>
-        <link href="https://chimpino.com/ai-plugin.html"/>
-        <id>https://chimpino.com/ai-plugin.html</id>
+        <link href="https://chimpino.com/ai-plugin/"/>
+        <id>https://chimpino.com/ai-plugin/</id>
 
         <updated>2023-10-06T11:10:56+02:00</updated>
             <summary>
@@ -330,8 +409,8 @@
         <author>
             <name>Jan Linhart</name>
         </author>
-        <link href="https://chimpino.com/contacts.html"/>
-        <id>https://chimpino.com/contacts.html</id>
+        <link href="https://chimpino.com/contacts/"/>
+        <id>https://chimpino.com/contacts/</id>
 
         <updated>2023-10-06T11:09:14+02:00</updated>
             <summary>
@@ -350,14 +429,14 @@
         </content>
     </entry>
     <entry>
-        <title>Home</title>
+        <title>Home do not use</title>
         <author>
             <name>Jan Linhart</name>
         </author>
-        <link href="https://chimpino.com/home.html"/>
-        <id>https://chimpino.com/home.html</id>
+        <link href="https://chimpino.com/home/"/>
+        <id>https://chimpino.com/home/</id>
 
-        <updated>2023-10-06T11:09:35+02:00</updated>
+        <updated>2023-10-23T14:50:54+02:00</updated>
             <summary>
                 <![CDATA[
                     Plugins for&nbsp;Mautic® We want you to make your life easier. With our plugins you can make sleep better with work done for you. Right now we have:
@@ -378,10 +457,10 @@
   <p>
     Right now we have:
   </p>
-
-  <ul>
-    <li>AI Plugin</li><li>Stripe Plugin</li>
-  </ul>
+<div><ul>
+<li><a href="{{ai-plugin}}" id="links">AI Plugin</a></li>
+<li><a href="https://chimpino.com/stripe-plugin.html" id="links">Stripe Plugin</a></li>
+</ul></div>
 
   <p>
     

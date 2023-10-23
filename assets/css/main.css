@@ -1343,6 +1343,7 @@ textarea {
 }
 .hero__content h1 {
   color: var(--hero-heading-color);
+  text-align: center;
 }
 .hero__content h1 > sup {
   font-size: 1.066666667rem;
@@ -2089,7 +2090,7 @@ textarea {
   text-align: center;
 }
 .footer__social svg {
-  fill: var(--white);
+  fill: var(--black);
   height: 0.9374999997rem;
   margin: 0 0.85rem;
   opacity: 0.6;
