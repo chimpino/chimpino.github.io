@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-10-23T16:12:05+02:00</updated>
+    <updated>2023-10-24T13:27:38+02:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -109,7 +109,7 @@
         <link href="https://chimpino.com/stripe-plugin/"/>
         <id>https://chimpino.com/stripe-plugin/</id>
 
-        <updated>2023-10-23T16:12:05+02:00</updated>
+        <updated>2023-10-24T13:27:38+02:00</updated>
             <summary>
                 <![CDATA[
                     Implements Stripe payment service provider to Mautic® Stripe Plugin allows you to implement online payment processing and credit card processing platform for your business. Your Mautic instance can react in your campaign on Stripe webhooks. You can set your campaign to catch events. We watch&hellip;
@@ -158,7 +158,7 @@
 <h3>Configuration</h3>
 <p>Once the plugin is installed, go the plugins list. You should see the Stripe Plugin within your other plugins. You can save your test and production Secret key.</p>
 <h4>Signing</h4>
-<p>You can verify caught webhooks. Go to plugins list and open Stripe Plugin, where you can insert the Secret key from your Stripe app. Go to Developers section and to API keys tab (<a href="https://dashboard.stripe.com/apikeys" id="links">https://dashboard.stripe.com/apikeys</a>) to reveal your Secret key (if you are in test mode you will see only testing Secret key and if you are in production mode you will only production Secret key). Insert secret key to the plugin, switch the plugin to be enabled and now you are ready to verify your caught events, that they are not fraud. </p>
+<p>You can verify caught webhooks. Go to plugins list and open Stripe Plugin, where you can insert the Secret key from your Stripe app. Go to Developers section and to API keys tab to reveal your Secret key (if you are in test mode you will see only testing Secret key and if you are in production mode you will only production Secret key). Insert secret key to the plugin, switch the plugin to be enabled and now you are ready to verify your caught events, that they are not fraud. </p>
 <h4>Segment filter</h4>
 <p>You can make campaign based on segment. You can choose from Customer Created, Customer Updated, Customer Subscription Created, Customer Subscription Updated, Invoice Paid. </p>
 <h4>Campaign condition</h4>
@@ -265,7 +265,7 @@ Mautic 5 is close to an alpha version (written on June 15) and we want to prepar
         <link href="https://chimpino.com/ai-plugin/"/>
         <id>https://chimpino.com/ai-plugin/</id>
 
-        <updated>2023-10-06T11:10:56+02:00</updated>
+        <updated>2023-10-23T16:18:18+02:00</updated>
             <summary>
                 <![CDATA[
                     Implements OpenAI's Chat GPT to Mautic® Features Generate email content API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as Chat GPT. So you can test what contents this AI model generates even without this plugin.
