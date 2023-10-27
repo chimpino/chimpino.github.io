@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-10-27T11:26:16+02:00</updated>
+    <updated>2023-10-27T16:29:41+02:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -17,22 +17,28 @@
         <link href="https://chimpino.com/home-2/"/>
         <id>https://chimpino.com/home-2/</id>
 
-        <updated>2023-10-23T14:32:53+02:00</updated>
+        <updated>2023-10-27T16:29:41+02:00</updated>
             <summary>
                 <![CDATA[
-                    Plugins for Mautic® We want you to make your life easier. With our plugins you can make sleep better with work done for you. Right now we have: AI Plugin Stripe Plugin
+                    Plugins for Mautic® Chimpino offers a diverse range of plugins and integrations tailored to your unique marketing needs. From email marketing and analytics to CRM and e-commerce integrations, we have a solution for you. Explore our AI Plugin to discover how we can help you supercharge&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <h2 id="plugins-forandnbspmauticr" class="align-center">Plugins for Mautic®</h2>
-<p>We want you to make your life easier. With our plugins you can make sleep better with work done for you.</p>
-<p>Right now we have:</p>
+<p>Chimpino offers a diverse range of plugins and integrations tailored to your unique marketing needs. From email marketing and analytics to CRM and e-commerce integrations, we have a solution for you. Explore our <a href="https://chimpino.com/ai-plugin/">AI Plugin</a> to discover how we can help you supercharge your Mautic experience. We want you to make your life easier. With our plugins you can sleep better, because work is done for you.</p>
+<p>Now we have:</p>
 <div>
 <ul>
 <li><a href="https://chimpino.com/ai-plugin/">AI Plugin</a><a href="{{ai-plugin}}" id="links"></a></li>
-<li><a href="https://chimpino.com/stripe-plugin/">Stripe Plugin</a></li>
 </ul>
+<p>We are working on some new Plugins to ease your live. We will present it to you soon.</p>
+<p><strong>Why Choose Chimpino?</strong></p>
+<p><em>Quality and Reliability</em>: We obsess over quality. Every Chimpino plugin undergoes rigorous testing and quality assurance processes to meet the highest standards, ensuring that they work seamlessly with your Mautic platform.</p>
+<p><em>User-Friendly Solutions</em>: You don't need to be a tech guru to use our plugins. We've made installation, configuration, and everyday use a breeze, so you can focus on what matters most - your marketing strategy.</p>
+<p><em>Continuous Innovation</em>: In the dynamic world of marketing, staying ahead is crucial. Chimpino is committed to continuous innovation, delivering new and exciting plugins to match industry trends and evolving marketing needs.</p>
+<p><em>Exceptional Support</em>: Our dedicated support team is here to assist you every step of the way. No matter the question or issue, we're here to ensure your success with our products.</p>
+<p><em>Community Engagement</em>: Chimpino thrives in the spirit of community. We actively engage with the Mautic community, sharing knowledge and support to help everyone succeed. When you choose Chimpino, you're not just buying a plugin; you're joining a like-minded community.</p>
 </div>
             ]]>
         </content>
@@ -45,20 +51,23 @@
         <link href="https://chimpino.com/about-us/"/>
         <id>https://chimpino.com/about-us/</id>
 
-        <updated>2023-10-23T14:33:46+02:00</updated>
+        <updated>2023-10-27T16:27:16+02:00</updated>
             <summary>
                 <![CDATA[
-                    Who is Chimpino Chimpino is two software ingeneers located in Prague in the Czech republic. We are making plugins for open source software Mautic®. We want to make lives easier to our customers. Jan is the brain of the Chimpino with many and many years&hellip;
+                    Who is Chimpino Welcome to Chimpino, your trusted partner in enhancing your Mautic experience through innovative plugins and integrations. At Chimpino, we're passionate about helping businesses and organizations unlock the full potential of Mautic, the powerful marketing automation platform. Our mission is to make your&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <h2>Who is Chimpino</h2>
-<p>Chimpino is two software ingeneers located in Prague in the Czech republic. We are making plugins for open source software Mautic®. We want to make lives easier to our customers.</p>
+<p>Welcome to Chimpino, your trusted partner in enhancing your Mautic experience through innovative plugins and integrations. At Chimpino, we're passionate about helping businesses and organizations unlock the full potential of Mautic, the powerful marketing automation platform. Our mission is to make your marketing efforts smarter, more efficient, and more effective.</p>
+<p>Chimpino was founded by Jan Linhart and Dana Linhartová who are software engineers  and technology enthusiasts who recognized the need for user-friendly, feature-rich plugins that seamlessly integrate with Mautic. We understand the challenges businesses face in the ever-evolving digital landscape, and our journey began with a commitment to develop solutions that simplify marketing automation and maximize results.</p>
+<p>We are located in Prague in the Czech republic. We are making plugins for open source software Mautic®. </p>
+<p>We are committed to providing top-tier plugins and integrations that empower Mautic users to optimize their marketing campaigns, engage with their audience, and ultimately achieve their business goals. We believe that technology should be a catalyst for success, not a hurdle to overcome. That's why we design our plugins with simplicity, reliability, and performance in mind.</p>
 <h2>Jan Linhart</h2>
-<p>Jan is the brain of the Chimpino with many and many years of experience as a software developer and he is full time developer.</p>
+<p>Jan is the brain of the Chimpino with many and many years of experience as a software engineer and he is full time developer.</p>
 <h2>Dana Linhartová</h2>
-<p>Dana is beginner who learn basics of Flutter and retrained as Developer of the websites. She needs to be flexible to handle all obligations.</p>
+<p>Dana is beginner who learned basics of Flutter and retrained as Developer of the websites. She needs to be flexible to handle all obligations.</p>
 <p> </p>
 <p> </p>
             ]]>
@@ -109,15 +118,19 @@
         <link href="https://chimpino.com/stripe-plugin/"/>
         <id>https://chimpino.com/stripe-plugin/</id>
 
-        <updated>2023-10-27T11:26:16+02:00</updated>
+        <updated>2023-10-27T14:28:08+02:00</updated>
             <summary>
                 <![CDATA[
-                    Implements Stripe payment service provider to Mautic® Stripe Plugin allows you to implement online payment processing and credit card processing platform for your business. Your Mautic instance can react in your campaign on Stripe webhooks. You can set your campaign to catch events. We watch&hellip;
+                    přesunout odkaz na Home stránku a odkrýt v menu stripe plugin Stripe Plugin allows you to implement online payment processing and credit card processing platform for your business. Your Mautic instance can react in your campaign on Stripe webhooks. You can set your campaign to&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h1>Implements Stripe payment service provider to Mautic®</h1>
+                <p>přesunout odkaz na Home stránku a odkrýt v menu stripe plugin</p>
+<ul>
+<li><a href="https://chimpino.com/stripe-plugin/">Stripe Plugin</a></li>
+</ul>
+<h1>Implements Stripe payment service provider to Mautic®</h1>
 <p> </p>
 <p>Stripe Plugin allows you to implement online payment processing and credit card processing platform for your business. Your Mautic instance can react in your campaign on Stripe webhooks.</p>
 <h2>Features</h2>
@@ -423,16 +436,17 @@ Mautic 5 is close to an alpha version (written on June 15) and we want to prepar
         <link href="https://chimpino.com/contacts/"/>
         <id>https://chimpino.com/contacts/</id>
 
-        <updated>2023-10-06T11:09:14+02:00</updated>
+        <updated>2023-10-27T16:22:40+02:00</updated>
             <summary>
                 <![CDATA[
-                    You can contact follow us on LinkedIn. We will be happy to hear about any of your feedback. Any suggestions are welcomed. Feel free to let contact us.
+                    You can follow us on LinkedIn. Have questions, feedback, or suggestions? Our team is here to listen and assist. Contact us anytime, and we'll be happy to engage with you. Feel free to let contact us through contact below. Thank you for choosing Chimpino as&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>You can contact follow us on <a href="https://www.linkedin.com/company/chimpinoteam/?viewAsMember=true" class="link">LinkedIn</a>.</p>
-<p>We will be happy to hear about any of your feedback. Any suggestions are welcomed. Feel free to let contact us.</p>
+                <p>You can follow us on <a href="https://www.linkedin.com/company/chimpinoteam/?viewAsMember=true" class="link">LinkedIn</a>.</p>
+<p>Have questions, feedback, or suggestions? Our team is here to listen and assist. Contact us anytime, and we'll be happy to engage with you. Feel free to let contact us through  contact  below.</p>
+<p>Thank you for choosing Chimpino as your trusted source for Mautic plugins. We look forward to helping you achieve marketing excellence, one plugin at a time.<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> </span></p>
 <p>
 <script type="text/javascript" src="//m.chimpino.com/form/generate.js?id=1" class="section pt-0" id="contact"></script>
 </p>
