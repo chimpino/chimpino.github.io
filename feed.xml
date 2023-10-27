@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-10-24T13:27:38+02:00</updated>
+    <updated>2023-10-27T11:26:16+02:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -109,7 +109,7 @@
         <link href="https://chimpino.com/stripe-plugin/"/>
         <id>https://chimpino.com/stripe-plugin/</id>
 
-        <updated>2023-10-24T13:27:38+02:00</updated>
+        <updated>2023-10-27T11:26:16+02:00</updated>
             <summary>
                 <![CDATA[
                     Implements Stripe payment service provider to Mautic® Stripe Plugin allows you to implement online payment processing and credit card processing platform for your business. Your Mautic instance can react in your campaign on Stripe webhooks. You can set your campaign to catch events. We watch&hellip;
@@ -157,8 +157,6 @@
 <figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-19-at-11.42.03.png" alt="" width="1970" height="588" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-2xl.png 1600w"></figure>
 <h3>Configuration</h3>
 <p>Once the plugin is installed, go the plugins list. You should see the Stripe Plugin within your other plugins. You can save your test and production Secret key.</p>
-<h4>Signing</h4>
-<p>You can verify caught webhooks. Go to plugins list and open Stripe Plugin, where you can insert the Secret key from your Stripe app. Go to Developers section and to API keys tab to reveal your Secret key (if you are in test mode you will see only testing Secret key and if you are in production mode you will only production Secret key). Insert secret key to the plugin, switch the plugin to be enabled and now you are ready to verify your caught events, that they are not fraud. </p>
 <h4>Segment filter</h4>
 <p>You can make campaign based on segment. You can choose from Customer Created, Customer Updated, Customer Subscription Created, Customer Subscription Updated, Invoice Paid. </p>
 <h4>Campaign condition</h4>
@@ -166,8 +164,11 @@
 <h4>Webhook testing</h4>
 <p>You can test your Stripe setting. First you have to click to <span style="color: #3598db;">Test mode</span> switcher in the Stripe app. Then click to Developer options and then to Webhook tab as you can see below.</p>
 <figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-09-19-at-10.19.10.png" alt="" width="2664" height="1456" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-09-19-at-10.19.10-2xl.png 1600w"></figure>
-<p>Than you can Add an endpoint.</p>
-<p>Now new window will open to you. Insert your endpoint URL address, you can describe what are you exactly testing. Choose Listen to option "Event on your account". Then what events should be listen to in the option:  Select events to listen to. New window will open, where you can choose what you want to listen to (<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.created, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.updated, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.subscription.created, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.subscription.updated or </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">invoice.paid).</span></p>
+<p>Than you can Add an endpoint. Now new window will open to you.</p>
+<p>Endpoint URL is URL address where you have your Mautic instance and ends with "*<span style="color: #faa90f;">/stripe/webhook</span>".</p>
+<p>For example: https://my.mautic.com/stripe/webhook</p>
+<p>You can describe what are you exactly testing. Choose Listen to option "Event on your account". Then what events should be listen to in the option:  Select events to listen to. New window will open, where you can choose what you want to listen to (<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.created, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.updated, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.subscription.created, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.subscription.updated or </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">invoice.paid).</span></p>
+<p> </p>
 <figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-23-at-13.15.32.png" alt="" width="455" height="531" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-2xl.png 1600w"></figure>
 <p>With this set up you can go to your Mautic instance and in the menu choose Components. There is Landing pages option. Create new Landing page and insert tokens to builder. You can make <strong><span style="color: #faa90f;">pricing table</span></strong> by inserting this token in to the builder.</p>
 <h5><span style="color: #faa90f;">Pricing table token</span></h5>
@@ -219,12 +220,22 @@
 <h6><span style="color: #3598db;">key</span></h6>
 <p>Key is your publishable key and it is the same as the key in the pricing tableGo to Developer tab. Choose API keys and copy the Publishable Key. Or you can copy the key from HTML code above in the buy button.</p>
 <p>More about this buy button process you can see in the <a href="https://stripe.com/docs/payment-links/buy-button" id="links">documentation</a>.</p>
-<h5><span style="color: #faa90f;">Campaign</span></h5>
-<p>Make campaign in the main menu as usual and use new segments. For example send email with the invoice to the customer if customer buys your product. </p>
-<h5><span style="color: #faa90f;">Landing page</span> </h5>
+<h4>Signing</h4>
+<p>you will need two keys <span style="color: #faa90f;">Secret key</span> and <span style="color: #faa90f;">Webhook secret key</span>.</p>
+<p>Insert Secret key and Webhook secret key to the plugin in Mautic app (how to get Secret key or Webhook secret key, please read sections below). Switch the plugin to be enabled. Choose the mode to be used and you are ready to verify your caught events, that they are not fraud. </p>
+<h5><span style="color: #faa90f;">Secret key</span></h5>
+<p>Secret key is used to sigh API request to Stripe. In the Stripe app you can get Test and Production Secret key depended on chosen mode.</p>
+<p>Go to plugins list in Mautic app and open Stripe Plugin, where you can insert the Secret key from your Stripe app from Stripe app. Go to Developers section in Stripe app and to API keys tab to reveal your Secret key. Revealed Secret key depends on chosen mode (if you are in test mode you will see only testing Secret key and if you are in production mode you will only production Secret key).  Please note that the production Secret key can be revealed only once. If you loose it you will need to generate new one.</p>
+<h5><span style="color: #faa90f;">Webhook secret key</span></h5>
+<p>Webhook secret key is used to verify caught webhooks. </p>
+<p>You can get test and production Webhook secret key in the Stripe app. Go to Stripe app to Developer section, there is Webhooks tab. Open your Hosted endpoints URL. You can see Signing secret part to be cevealed. Click to Reveal and you copy the Webhook secret key to Stripe Plugin set up in Mautic app.</p>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-25-at-10.50.30-2.png" alt="" width="1482" height="516" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-25-at-10.50.30-2-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-25-at-10.50.30-2-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-25-at-10.50.30-2-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-25-at-10.50.30-2-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-25-at-10.50.30-2-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-25-at-10.50.30-2-2xl.png 1600w"></figure>
+<h4>Campaign</h4>
+<p>Make campaign in the main menu as usual and use new segments, Stripe Products etc. For example send email with the invoice to the customer if customer buys your product and you receive webhook invoice.paid. </p>
+<h4>Landing page</h4>
 <p>If you set up all, you can go to Mautic app and click to Components and Landing Pages in the main menu. Add new landing page and in the builder insert token which you want to use (Pricing table or Buy button). Save it and open through the URL.</p>
 <figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-23-at-13.34.57.png" alt="" width="2840" height="1132" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.34.57-2xl.png 1600w"></figure>
-<p>Landing page will open with the pricing table or buy button or both. You can "buy" subscription or use buy button virtually.</p>
+<p>Landing page will open with the pricing table or buy button or both. You can "buy" subscription or use buy button virtually. Virtual payment can be made virtual card <a class="Link" href="https://stripe.com/docs/testing?testing-method=card-numbers#visa">4242 4242 4242 4242</a> with future expiration date (for example: 12/34) and fill the other informations as you want. <a href="https://stripe.com/docs/testing" id="links"></a>More about simulating payment is in the <a href="https://stripe.com/docs/testing" id="links">documentation</a>.</p>
 <p><span style="color: var(--headings-color); font-family: var(--font-base); font-size: 1.60181em; font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing);">FAQ</span></p>
 <div class="container">
 <section id="faq" class="section">
