@@ -3,42 +3,106 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-11-07T10:46:51+01:00</updated>
+    <updated>2023-11-15T12:00:59+01:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
     <id>https://chimpino.com</id>
 
     <entry>
-        <title>Home</title>
+        <title>Themes</title>
+        <author>
+            <name>Jan Linhart</name>
+        </author>
+        <link href="https://chimpino.com/themes/"/>
+        <id>https://chimpino.com/themes/</id>
+
+        <updated>2023-11-15T12:00:25+01:00</updated>
+            <summary>
+                <![CDATA[
+                    We prepared light themes Paprika Light and Brienz Light for your emails. Those themes are based on the original Mautic templates but all the demo content was removed so they are way smaller then the stock Mautic templates. We also prepared Air theme for Landing&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>We prepared light themes <strong><span style="color: #faa90f;">Paprika Light</span></strong> and <strong><span style="color: #faa90f;">Brienz Light</span></strong> for your emails. Those themes are based on the original Mautic templates but all the demo content was removed so they are way smaller then the stock Mautic templates.</p>
+<figure class="post__image align-center"><img  src="https://chimpino.com/media/posts/8/Screenshot-2023-11-14-at-11.18.22.png" alt="Breinz light theme" width="226" height="399" sizes="100vw" srcset="https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-xs.png 300w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-sm.png 480w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-md.png 768w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-lg.png 1024w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-xl.png 1360w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-2xl.png 1600w"></figure>.     <figure class="post__image align-center"><img loading="lazy"  src="https://chimpino.com/media/posts/8/Screenshot-2023-11-14-at-11.18.16.png" alt="Paprika light theme" width="230" height="399" sizes="100vw" srcset="https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-xs.png 300w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-sm.png 480w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-md.png 768w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-lg.png 1024w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-xl.png 1360w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-2xl.png 1600w"></figure>
+<p>We also prepared <strong><span style="color: #faa90f;">Air</span></strong> theme for Landing pages.</p>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/8/Screenshot-2023-11-15-at-10.20.48-2.png" alt="" width="203" height="362" sizes="100vw" srcset="https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-15-at-10.20.48-2-xs.png 300w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-15-at-10.20.48-2-sm.png 480w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-15-at-10.20.48-2-md.png 768w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-15-at-10.20.48-2-lg.png 1024w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-15-at-10.20.48-2-xl.png 1360w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-15-at-10.20.48-2-2xl.png 1600w"></figure>
+<p>Fill in the form below and we will send you our light themes.</p>
+<p>
+<script type="text/javascript" src="//m.chimpino.com/form/generate.js?id=2" id="send-themes"></script>
+</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>We ❤️ building Mautic plugins</title>
         <author>
             <name>Jan Linhart</name>
         </author>
         <link href="https://chimpino.com/home-2/"/>
         <id>https://chimpino.com/home-2/</id>
 
-        <updated>2023-10-27T16:29:41+02:00</updated>
+        <updated>2023-11-07T20:26:38+01:00</updated>
             <summary>
                 <![CDATA[
-                    Plugins for Mautic® Chimpino offers a diverse range of plugins and integrations tailored to your unique marketing needs. From email marketing and analytics to CRM and e-commerce integrations, we have a solution for you. Explore our AI Plugin to discover how we can help you supercharge&hellip;
+                    Our goal is to extend the Mautic's philosophy and automate the repetitive tasks that any 🐵 could perform. You, dear reader, should be focused in the creative tasks and automate the rest. Our focus is in optimizing your workflows to make you more productive and&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h2 id="plugins-forandnbspmauticr" class="align-center">Plugins for Mautic®</h2>
-<p>Chimpino offers a diverse range of plugins and integrations tailored to your unique marketing needs. From email marketing and analytics to CRM and e-commerce integrations, we have a solution for you. Explore our <a href="https://chimpino.com/ai-plugin/">AI Plugin</a> to discover how we can help you supercharge your Mautic experience. We want you to make your life easier. With our plugins you can sleep better, because work is done for you.</p>
-<p>Now we have:</p>
-<div>
+                <p>Our goal is to extend the <a href="https://mautic.org">Mautic's</a> philosophy and automate the repetitive tasks that any 🐵 could perform. You, dear reader, should be focused in the <strong>creative tasks</strong> and <strong>automate the rest</strong>. Our focus is in optimizing your workflows to make you more productive and your customers happy.</p>
+<blockquote>
+<p>Live's too short. Automate all the monkey tasks. </p>
+</blockquote>
+<h2>Chimpino plugins</h2>
+<table class="invisible" border="0">
+<tbody>
+<tr>
+<td>
+<h3>AI Plugin</h3>
 <ul>
-<li><a href="https://chimpino.com/ai-plugin/">AI Plugin</a><a href="{{ai-plugin}}" id="links"></a></li>
+<li>Generate email content with Open AI's GPT model</li>
+<li>Insert the content to an existing theme</li>
+<li>Or generate a new theme according to your description</li>
+<li>Modify the generated content in the email builder</li>
 </ul>
-<p>We are working on some new Plugins to ease your live. We will present it to you soon.</p>
-<p><strong>Why Choose Chimpino?</strong></p>
-<p><em>Quality and Reliability</em>: We obsess over quality. Every Chimpino plugin undergoes rigorous testing and quality assurance processes to meet the highest standards, ensuring that they work seamlessly with your Mautic platform.</p>
-<p><em>User-Friendly Solutions</em>: You don't need to be a tech guru to use our plugins. We've made installation, configuration, and everyday use a breeze, so you can focus on what matters most - your marketing strategy.</p>
-<p><em>Continuous Innovation</em>: In the dynamic world of marketing, staying ahead is crucial. Chimpino is committed to continuous innovation, delivering new and exciting plugins to match industry trends and evolving marketing needs.</p>
-<p><em>Exceptional Support</em>: Our dedicated support team is here to assist you every step of the way. No matter the question or issue, we're here to ensure your success with our products.</p>
-<p><em>Community Engagement</em>: Chimpino thrives in the spirit of community. We actively engage with the Mautic community, sharing knowledge and support to help everyone succeed. When you choose Chimpino, you're not just buying a plugin; you're joining a like-minded community.</p>
+<p class="align-center"><a href="https://chimpino.com/ai-plugin/">Read more</a></p>
+</td>
+<td><a href="https://chimpino.com/ai-plugin/"><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal); outline: 3px solid rgba(var(--color-primary-rgb), 0.55)  !important;" src="https://chimpino.com/media/posts/7/ai-plugin-box.jpeg" alt="" width="834" height="774" sizes="100vw" srcset="https://chimpino.com/media/posts/7/responsive/ai-plugin-box-xs.jpeg 300w ,https://chimpino.com/media/posts/7/responsive/ai-plugin-box-sm.jpeg 480w ,https://chimpino.com/media/posts/7/responsive/ai-plugin-box-md.jpeg 768w ,https://chimpino.com/media/posts/7/responsive/ai-plugin-box-lg.jpeg 1024w ,https://chimpino.com/media/posts/7/responsive/ai-plugin-box-xl.jpeg 1360w ,https://chimpino.com/media/posts/7/responsive/ai-plugin-box-2xl.jpeg 1600w"></figure></a></td>
+</tr>
+<tr>
+<td>
+<h3>Stripe Plugin</h3>
+<ul>
+<li>Sell digital goods with automated delivery</li>
+<li>Configure Mautic campaigns to react to the Stripe events</li>
+<li>Insert pricing tables to landing pages</li>
+<li>Insert payment buttons to pages or emails</li>
+<li>Manage subscriptions</li>
+<li>Send invoices</li>
+</ul>
+<p class="align-center"><a href="https://chimpino.com/stripe-plugin/">Read more</a></p>
+</td>
+<td><a href="https://chimpino.com/stripe-plugin/"><figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/7/stripe-plugin-box.jpeg" alt="" width="824" height="780" sizes="100vw" srcset="https://chimpino.com/media/posts/7/responsive/stripe-plugin-box-xs.jpeg 300w ,https://chimpino.com/media/posts/7/responsive/stripe-plugin-box-sm.jpeg 480w ,https://chimpino.com/media/posts/7/responsive/stripe-plugin-box-md.jpeg 768w ,https://chimpino.com/media/posts/7/responsive/stripe-plugin-box-lg.jpeg 1024w ,https://chimpino.com/media/posts/7/responsive/stripe-plugin-box-xl.jpeg 1360w ,https://chimpino.com/media/posts/7/responsive/stripe-plugin-box-2xl.jpeg 1600w"></figure></a></td>
+</tr>
+</tbody>
+</table>
+<div>
+<h2>Why Choose Chimpino?</h2>
+<p>Short version: we build our plugins for us. We want them to be amazing!</p>
+<h3>Quality and Reliability</h3>
+<p>We obsess over quality. Every Chimpino plugin undergoes rigorous testing and quality assurance processes to meet the highest standards, ensuring that they work seamlessly with your Mautic instance. We keep our code base covered by automated tests to ensure stability and allows us to add new features fast with knowledge it did not affect the existing functionality.</p>
+<h3>User-Friendly Solutions</h3>
+<p>You don't need to be a tech guru to use our plugins. We've made configuration and everyday use a breeze, so you can focus on what matters most - your marketing strategy.</p>
+<h3>Continuous Innovation</h3>
+<p>In the dynamic world of marketing, staying ahead is crucial. Chimpino is committed to continuous innovation, delivering new and exciting plugins and themes to match industry trends and evolving marketing needs.</p>
+<h3>Exceptional Support</h3>
+<p>Our dedicated support team is here to assist you every step of the way. No matter the question or issue, we're here to ensure your success with our products. We are improving the documentation after every support request to ensure clear instructions for all our customers.</p>
+<h3>Community Engagement</h3>
+<p>Chimpino thrives in the spirit of community. We actively engage with the Mautic community, sharing knowledge and support to help everyone succeed. When you choose Chimpino, you're not just buying a plugin; you're joining a like-minded community.</p>
 </div>
             ]]>
         </content>
@@ -118,20 +182,16 @@
         <link href="https://chimpino.com/stripe-plugin/"/>
         <id>https://chimpino.com/stripe-plugin/</id>
 
-        <updated>2023-11-07T10:46:51+01:00</updated>
+        <updated>2023-11-15T10:48:10+01:00</updated>
             <summary>
                 <![CDATA[
-                    přesunout odkaz na Home stránku a odkrýt v menu stripe plugin Stripe Plugin allows you to implement online payment processing and credit card processing platform for your business. Your Mautic instance can react in your campaign on Stripe webhooks. You can set your campaign to&hellip;
+                    Implements Stripe payment service provider to Mautic® Stripe Plugin allows you to implement online payment processing and credit card processing platform for your business. Your Mautic instance can react in your campaign on Stripe webhooks. You can set your campaign to catch events. We watch&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>přesunout odkaz na Home stránku a odkrýt v menu stripe plugin</p>
-<ul>
-<li><a href="https://chimpino.com/stripe-plugin/">Stripe Plugin</a></li>
-</ul>
-<h1>Implements Stripe payment service provider to Mautic®</h1>
-<p> </p>
+                <h1>Implements Stripe payment service provider to Mautic®</h1>
+<div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://youtu.be/9DXzWDbdDUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe></div> </p>
 <p>Stripe Plugin allows you to implement online payment processing and credit card processing platform for your business. Your Mautic instance can react in your campaign on Stripe webhooks.</p>
 <h2>Features</h2>
 <h4>Set the campaign</h4>
@@ -290,7 +350,7 @@ Mautic 5 is close to an alpha version (written on June 15) and we want to prepar
         <link href="https://chimpino.com/ai-plugin/"/>
         <id>https://chimpino.com/ai-plugin/</id>
 
-        <updated>2023-10-23T16:18:18+02:00</updated>
+        <updated>2023-11-15T12:00:59+01:00</updated>
             <summary>
                 <![CDATA[
                     Implements OpenAI's Chat GPT to Mautic® Features Generate email content API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as Chat GPT. So you can test what contents this AI model generates even without this plugin.
@@ -305,12 +365,8 @@ Mautic 5 is close to an alpha version (written on June 15) and we want to prepar
 <p>API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as Chat GPT. So you can test what contents this AI model generates even without this plugin. It is as powerful as having a copywriter on your team. It can generate as entertaining emails as you ask it to.</p>
 <h4>Templates</h4>
 <div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UfhRIlKUiro?si=4EQO6R6LtNSM4b7r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe></div>
-<p>The AI Plugin works well with Mautic's templates. We recommend you to use the following lighter templates with the AI Plugin to save money on the Open AI's credits:</p>
-<ul class="container">
-<li><a href="https://m.chimpino.com/asset/7:paprika-lightzip" id="links">Paprika Light</a></li>
-<li><a href="https://m.chimpino.com/asset/6:brienz-lightzip" id="links">Brienz Light</a></li>
-</ul>
-<p>Those tokens are based on the original Mautic templates but all the demo content was removed so they are way smaller then the stock Mautic templates.</p>
+<p>The AI Plugin works well with Mautic's templates. We recommend you to use the following lighter templates with the AI Plugin to save money on the Open AI's credits. More you can find out <a href="https://chimpino.com/themes/">Themes</a> section.</p>
+<p>Those themes are based on the original Mautic templates but all the demo content was removed so they are way smaller then the stock Mautic templates.</p>
 <h4>Code Mode and MJML</h4>
 <p>Mautic's Code Mode allows you to copy-paste your own template. With AI plugin you can describe how the template should look like and let it generate the template for you.</p>
 <p>The template will be written in <a href="https://mjml.io/">MJML</a> instead of classic HTML so you can be sure that it will be responsive and rendered the same way for every email provider and every inbox.</p>
@@ -437,7 +493,7 @@ Mautic 5 is close to an alpha version (written on June 15) and we want to prepar
         <link href="https://chimpino.com/contacts/"/>
         <id>https://chimpino.com/contacts/</id>
 
-        <updated>2023-10-27T16:22:40+02:00</updated>
+        <updated>2023-11-08T11:10:07+01:00</updated>
             <summary>
                 <![CDATA[
                     You can follow us on LinkedIn. Have questions, feedback, or suggestions? Our team is here to listen and assist. Contact us anytime, and we'll be happy to engage with you. Feel free to let contact us through contact below. Thank you for choosing Chimpino as&hellip;
