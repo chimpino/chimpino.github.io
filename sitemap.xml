@@ -6,11 +6,11 @@
 </url>
 <url>
 <loc>https://chimpino.com/about-us/</loc>
-<lastmod>2023-10-27T16:27:16+02:00</lastmod>
+<lastmod>2023-11-15T21:45:05+01:00</lastmod>
 </url>
 <url>
 <loc>https://chimpino.com/ai-plugin/</loc>
-<lastmod>2023-11-15T12:00:59+01:00</lastmod>
+<lastmod>2023-11-15T20:07:18+01:00</lastmod>
 <image:image>
 <image:loc>https://chimpino.com/assets/imgs/ai-prompt.png</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -22,7 +22,7 @@
 </url>
 <url>
 <loc>https://chimpino.com/contacts/</loc>
-<lastmod>2023-11-08T11:10:07+01:00</lastmod>
+<lastmod>2023-11-15T21:34:36+01:00</lastmod>
 </url>
 <url>
 <loc>https://chimpino.com/home/</loc>
@@ -30,13 +30,17 @@
 </url>
 <url>
 <loc>https://chimpino.com/home-2/</loc>
-<lastmod>2023-11-07T20:26:38+01:00</lastmod>
+<lastmod>2023-11-15T20:04:21+01:00</lastmod>
 <image:image>
-<image:loc>https://chimpino.com/media/posts/7/ai-plugin-box.jpeg</image:loc>
+<image:loc>https://chimpino.com/media/posts/7/ai-plugin-box-2.jpeg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
 <image:loc>https://chimpino.com/media/posts/7/stripe-plugin-box.jpeg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://chimpino.com/media/posts/7/air-theme-2.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
@@ -45,7 +49,7 @@
 </url>
 <url>
 <loc>https://chimpino.com/stripe-plugin/</loc>
-<lastmod>2023-11-15T12:43:09+01:00</lastmod>
+<lastmod>2023-11-15T21:15:29+01:00</lastmod>
 <image:image>
 <image:loc>https://chimpino.com/media/posts/4/Screenshot-2023-10-19-at-11.42.03.png</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -89,7 +93,7 @@
 </url>
 <url>
 <loc>https://chimpino.com/themes/</loc>
-<lastmod>2023-11-15T12:00:25+01:00</lastmod>
+<lastmod>2023-11-15T21:31:54+01:00</lastmod>
 <image:image>
 <image:loc>https://chimpino.com/media/posts/8/Screenshot-2023-11-14-at-11.18.22.png</image:loc>
 <image:title><![CDATA[Breinz light theme]]></image:title>
@@ -100,6 +104,10 @@
 </image:image>
 <image:image>
 <image:loc>https://chimpino.com/media/posts/8/Screenshot-2023-11-15-at-10.20.48-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://chimpino.com/media/posts/8/theme-installation.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
