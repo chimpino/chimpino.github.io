@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-11-15T12:00:59+01:00</updated>
+    <updated>2023-11-15T12:43:09+01:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -182,7 +182,7 @@
         <link href="https://chimpino.com/stripe-plugin/"/>
         <id>https://chimpino.com/stripe-plugin/</id>
 
-        <updated>2023-11-15T10:48:10+01:00</updated>
+        <updated>2023-11-15T12:43:09+01:00</updated>
             <summary>
                 <![CDATA[
                     Implements Stripe payment service provider to Mautic® Stripe Plugin allows you to implement online payment processing and credit card processing platform for your business. Your Mautic instance can react in your campaign on Stripe webhooks. You can set your campaign to catch events. We watch&hellip;
@@ -205,7 +205,9 @@
 </ul>
 <p>Once you make condition to listen some events Mautic will make set up actin. For example if you want to send confirmation email to customer after customer updates personal information, you just let Mautic listen customer.updated event.</p>
 <h2>Pricing</h2>
-<p><stripe-pricing-table> will be added</stripe-pricing-table></p>
+<p>
+<script async="" src="https://js.stripe.com/v3/pricing-table.js"></script>
+<stripe-pricing-table pricing-table-id="prctbl_1OChTlDe6Bz3HFJoRcBk9foN" publishable-key="pk_live_51NFhPoDe6Bz3HFJoBZkdv4NpV6hzKqD9rnSHtNOuh65VyduCcPENh2joNvfmV8Mr2AdxdzZZ3ueeAsikeuTwYT9D00OLPZzyaO"> </stripe-pricing-table></p>
 <p> </p>
 <h2>Documentation</h2>
 <div id="instalation" class="container">
