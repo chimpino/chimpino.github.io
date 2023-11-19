@@ -98,15 +98,15 @@
             "id": "https://chimpino.com/contacts/",
             "url": "https://chimpino.com/contacts/",
             "title": "Contacts",
-            "summary": "You can follow us on LinkedIn and YouTube for fresh news about our plugins and themes. Have questions, feedback, or suggestions? Our team is here to listen and assist. Contact us anytime, and we'll be happy to engage with you. Feel free to let contact&hellip;",
-            "content_html": "<p>You can follow us on <a href=\"https://www.linkedin.com/company/chimpinoteam/?viewAsMember=true\" class=\"link\">LinkedIn</a> and <a href=\"https://www.youtube.com/@chimpino\">YouTube</a> for fresh news about our plugins and themes.</p>\n<p>Have questions, feedback, or suggestions? Our team is here to listen and assist. Contact us anytime, and we'll be happy to engage with you. Feel free to let contact us through  contact  below.</p>\n<p>Thank you for choosing Chimpino as your trusted source for Mautic plugins. We look forward to helping you achieve marketing excellence, one plugin at a time.<span style=\"color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);\"> </span></p>\n<p>\n<script type=\"text/javascript\" src=\"//m.chimpino.com/form/generate.js?id=1\" class=\"section pt-0\" id=\"contact\"></script>\n</p>",
+            "summary": "You can follow us on LinkedIn and YouTube and X for fresh news about our plugins and themes. Have questions, feedback, or suggestions? Our team is here to listen and assist. Contact us anytime, and we'll be happy to engage with you. Feel free to&hellip;",
+            "content_html": "<p>You can follow us on <a href=\"https://www.linkedin.com/company/chimpinoteam/?viewAsMember=true\" class=\"link\">LinkedIn</a> and <a href=\"https://www.youtube.com/@chimpino\">YouTube</a> and <a href=\"https://twitter.com/chimpinoteam\" target=\"_blank\" rel=\"noopener noreferrer\">X</a> for fresh news about our plugins and themes.</p>\n<p>Have questions, feedback, or suggestions? Our team is here to listen and assist. Contact us anytime, and we'll be happy to engage with you. Feel free to let contact us through  contact  below.</p>\n<p>Thank you for choosing Chimpino as your trusted source for Mautic plugins. We look forward to helping you achieve marketing excellence, one plugin at a time.<span style=\"color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);\"> </span></p>\n<p>\n<script type=\"text/javascript\" src=\"//m.chimpino.com/form/generate.js?id=1\" class=\"section pt-0\" id=\"contact\"></script>\n</p>",
             "author": {
                 "name": "Jan Linhart"
             },
             "tags": [
             ],
             "date_published": "2023-09-19T14:04:25+02:00",
-            "date_modified": "2023-11-15T21:34:36+01:00"
+            "date_modified": "2023-11-19T11:27:28+01:00"
         }
     ]
 }

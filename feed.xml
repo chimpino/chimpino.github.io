@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-11-19T10:45:35+01:00</updated>
+    <updated>2023-11-19T11:27:28+01:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -510,15 +510,15 @@ Of course you can cancel the subscription any time and get just one year of upda
         <link href="https://chimpino.com/contacts/"/>
         <id>https://chimpino.com/contacts/</id>
 
-        <updated>2023-11-15T21:34:36+01:00</updated>
+        <updated>2023-11-19T11:27:28+01:00</updated>
             <summary>
                 <![CDATA[
-                    You can follow us on LinkedIn and YouTube for fresh news about our plugins and themes. Have questions, feedback, or suggestions? Our team is here to listen and assist. Contact us anytime, and we'll be happy to engage with you. Feel free to let contact&hellip;
+                    You can follow us on LinkedIn and YouTube and X for fresh news about our plugins and themes. Have questions, feedback, or suggestions? Our team is here to listen and assist. Contact us anytime, and we'll be happy to engage with you. Feel free to&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>You can follow us on <a href="https://www.linkedin.com/company/chimpinoteam/?viewAsMember=true" class="link">LinkedIn</a> and <a href="https://www.youtube.com/@chimpino">YouTube</a> for fresh news about our plugins and themes.</p>
+                <p>You can follow us on <a href="https://www.linkedin.com/company/chimpinoteam/?viewAsMember=true" class="link">LinkedIn</a> and <a href="https://www.youtube.com/@chimpino">YouTube</a> and <a href="https://twitter.com/chimpinoteam" target="_blank" rel="noopener noreferrer">X</a> for fresh news about our plugins and themes.</p>
 <p>Have questions, feedback, or suggestions? Our team is here to listen and assist. Contact us anytime, and we'll be happy to engage with you. Feel free to let contact us through  contact  below.</p>
 <p>Thank you for choosing Chimpino as your trusted source for Mautic plugins. We look forward to helping you achieve marketing excellence, one plugin at a time.<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> </span></p>
 <p>
