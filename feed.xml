@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-11-19T10:30:36+01:00</updated>
+    <updated>2023-11-19T10:45:35+01:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://chimpino.com/themes/"/>
         <id>https://chimpino.com/themes/</id>
 
-        <updated>2023-11-15T21:31:54+01:00</updated>
+        <updated>2023-11-19T10:45:35+01:00</updated>
             <summary>
                 <![CDATA[
                     Mautic Email Themes We prepared light themes Paprika Light and Brienz Light for your emails. Those themes are based on the original Mautic templates but all the demo content was removed so they are way smaller then the stock Mautic templates. The size is useful&hellip;
@@ -26,11 +26,11 @@
         <content type="html">
             <![CDATA[
                 <h2>Mautic Email Themes</h2>
-<p>We prepared light themes <strong><span style="color: #faa90f;">Paprika Light</span></strong> and <strong><span style="color: #faa90f;">Brienz Light</span></strong> for your emails. Those themes are based on the original Mautic templates but all the demo content was removed so they are way smaller then the stock Mautic templates.</p>
+<p>We prepared light themes <strong>Paprika Light</strong> and <strong>Brienz Light</strong> for your emails. Those themes are based on the original Mautic templates but all the demo content was removed so they are way smaller then the stock Mautic templates.</p>
 <p>The size is useful in combination with our <a href="https://chimpino.com/ai-plugin/">AI plugin</a> as you get better results and it will lower the cost of generating email content.</p>
 <figure class="post__image align-center"><img  src="https://chimpino.com/media/posts/8/Screenshot-2023-11-14-at-11.18.22.png" alt="Breinz light theme" width="226" height="399" sizes="100vw" srcset="https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-xs.png 300w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-sm.png 480w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-md.png 768w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-lg.png 1024w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-xl.png 1360w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.22-2xl.png 1600w"></figure>     <figure class="post__image align-center"><img loading="lazy"  src="https://chimpino.com/media/posts/8/Screenshot-2023-11-14-at-11.18.16.png" alt="Paprika light theme" width="230" height="399" sizes="100vw" srcset="https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-xs.png 300w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-sm.png 480w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-md.png 768w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-lg.png 1024w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-xl.png 1360w ,https://chimpino.com/media/posts/8/responsive/Screenshot-2023-11-14-at-11.18.16-2xl.png 1600w"></figure>
 <h2>Mautic Landing Page Themes</h2>
-<p>We also prepared <strong><span style="color: #faa90f;">Air</span></strong> theme for Landing pages. It works well with our <a href="https://chimpino.com/stripe-plugin/">Stripe plugin</a> as it lets you embed Stripe pricing tables directly in the page content. Check the live demo for all the features it provides.</p>
+<p>We also prepared <strong>Air</strong> theme for Landing pages. It works well with our <a href="https://chimpino.com/stripe-plugin/">Stripe plugin</a> as it lets you embed Stripe pricing tables directly in the page content. Check the live demo for all the features it provides.</p>
 <table class="invisible" style="border-collapse: collapse; width: 100%;" border="1">
 <tbody>
 <tr>
@@ -368,16 +368,15 @@ Of course you can cancel the subscription any time and get just one year of upda
         <link href="https://chimpino.com/ai-plugin/"/>
         <id>https://chimpino.com/ai-plugin/</id>
 
-        <updated>2023-11-15T20:07:18+01:00</updated>
+        <updated>2023-11-19T10:44:44+01:00</updated>
             <summary>
                 <![CDATA[
-                    Implements OpenAI's Chat GPT to Mautic® Features Generate email content API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as Chat GPT. So you can test what contents this AI model generates even without this plugin.
+                    Features Generate email content API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as Chat GPT. So you can test what contents this AI model generates even without this plugin. It is as powerful as having&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h1 class="header-title ">Implements OpenAI's Chat GPT to Mautic®</h1>
-<h2><div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/aVacdUSrmqs?si=I5hB-JO0Awp8F0Ma" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe></div></h2>
+                <h2><div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/aVacdUSrmqs?si=I5hB-JO0Awp8F0Ma" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe></div></h2>
 <h2>Features</h2>
 <h4>Generate email content</h4>
 <p>API connection with OpenAI, the creators of Chat GPT allows you to connect to the same AI model as Chat GPT. So you can test what contents this AI model generates even without this plugin. It is as powerful as having a copywriter on your team. It can generate as entertaining emails as you ask it to.</p>
@@ -525,46 +524,6 @@ Of course you can cancel the subscription any time and get just one year of upda
 <p>
 <script type="text/javascript" src="//m.chimpino.com/form/generate.js?id=1" class="section pt-0" id="contact"></script>
 </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Home do not use</title>
-        <author>
-            <name>Jan Linhart</name>
-        </author>
-        <link href="https://chimpino.com/home/"/>
-        <id>https://chimpino.com/home/</id>
-
-        <updated>2023-10-23T14:50:54+02:00</updated>
-            <summary>
-                <![CDATA[
-                    Plugins for&nbsp;Mautic® We want you to make your life easier. With our plugins you can make sleep better with work done for you. Right now we have:
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <hr class="separator separator--long-line" />
-
-    <h2 id="plugins-forandnbspmauticr" class="align-center">
-      Plugins for&nbsp;Mautic®
-    </h2>
-
-  <p>
-    We want you to make your life easier. With our plugins you can make sleep better with work done for you.
-  </p>
-
-  <p>
-    Right now we have:
-  </p>
-<div><ul>
-<li><a href="{{ai-plugin}}" id="links">AI Plugin</a></li>
-<li><a href="https://chimpino.com/stripe-plugin.html" id="links">Stripe Plugin</a></li>
-</ul></div>
-
-  <p>
-    
-  </p>
             ]]>
         </content>
     </entry>
