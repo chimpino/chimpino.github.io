@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-11-15T21:45:05+01:00</updated>
+    <updated>2023-11-19T10:30:36+01:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -200,7 +200,7 @@
         <link href="https://chimpino.com/stripe-plugin/"/>
         <id>https://chimpino.com/stripe-plugin/</id>
 
-        <updated>2023-11-15T21:15:29+01:00</updated>
+        <updated>2023-11-19T10:30:36+01:00</updated>
             <summary>
                 <![CDATA[
                     Stripe Plugin will teach your Mautic to listen for payment events and react with campaign events. Help your team to automate payment processes and improve your customer experience at the same time. Forget about click-through rate or open rate. Payment rate is what really matters!&hellip;
@@ -208,7 +208,7 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://youtu.be/9DXzWDbdDUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe></div> </p>
+                <p class="align-center"><div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/9DXzWDbdDUE?si=Z_m8avAdC1A8iOeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe></div> </p>
 <p>Stripe Plugin will teach your Mautic to listen for payment events and react with campaign events. Help your team to automate payment processes and improve your customer experience at the same time.</p>
 <blockquote>
 <p>Forget about click-through rate or open rate. <strong>Payment rate</strong> is what really matters!</p>
