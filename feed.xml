@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2023-12-04T14:44:24+01:00</updated>
+    <updated>2023-12-04T15:09:04+01:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -17,15 +17,16 @@
         <link href="https://chimpino.com/blog/"/>
         <id>https://chimpino.com/blog/</id>
 
-        <updated>2023-12-04T14:44:24+01:00</updated>
+        <updated>2023-12-04T15:09:04+01:00</updated>
             <summary>
                 <![CDATA[
-                    What's new :)
+                    What's new :) We are working on this page right now.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <h2>What's new :)</h2>
+<p>We are working on this page right now.</p>
             ]]>
         </content>
     </entry>

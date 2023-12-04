@@ -14,15 +14,15 @@
             "id": "https://chimpino.com/blog/",
             "url": "https://chimpino.com/blog/",
             "title": "Blog",
-            "summary": "What's new :)",
-            "content_html": "<h2>What's new :)</h2>",
+            "summary": "What's new :) We are working on this page right now.",
+            "content_html": "<h2>What's new :)</h2>\n<p>We are working on this page right now.</p>",
             "author": {
                 "name": "Jan Linhart"
             },
             "tags": [
             ],
             "date_published": "2023-12-04T14:44:24+01:00",
-            "date_modified": "2023-12-04T14:44:24+01:00"
+            "date_modified": "2023-12-04T15:09:04+01:00"
         },
         {
             "id": "https://chimpino.com/themes/",
