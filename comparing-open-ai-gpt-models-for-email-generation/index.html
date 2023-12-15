@@ -1,0 +1,525 @@
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Comparing Open AI GPT models for email generation - Chimpino</title><meta name="description" content="There are many GPT models to choose from. The AI plugin for Mautic was using several versions of GPT 3.5-turbo in the past. We've been testing v4 a couple months ago but it was way too slow and the results were worse than with version 3.5. The models evolve incredibly fast though, so we set down to compare them and find the best one for generating email content for Mautic."><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://chimpino.com/comparing-open-ai-gpt-models-for-email-generation/"><link rel="alternate" type="application/atom+xml" href="https://chimpino.com/feed.xml"><link rel="alternate" type="application/json" href="https://chimpino.com/feed.json"><meta property="og:title" content="Comparing Open AI GPT models for email generation"><meta property="og:image" content="https://chimpino.com/media/website/CHIMPINO-png-cerna.png"><meta property="og:image:width" content="1485"><meta property="og:image:height" content="1217"><meta property="og:site_name" content="Chimpino"><meta property="og:description" content="There are many GPT models to choose from. The AI plugin for Mautic was using several versions of GPT 3.5-turbo in the past. We've been testing v4 a couple months ago but it was way too slow and the results were worse than with version 3.5. The models evolve incredibly fast though, so we set down to compare them and find the best one for generating email content for Mautic."><meta property="og:url" content="https://chimpino.com/comparing-open-ai-gpt-models-for-email-generation/"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://chimpino.com/media/website/favicon.png" type="image/x-icon"><link rel="stylesheet" href="https://chimpino.com/assets/css/style.css?v=a9a10092b29fc45f975d438a0378abb3"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://chimpino.com/comparing-open-ai-gpt-models-for-email-generation/"},"headline":"Comparing Open AI GPT models for email generation","datePublished":"2023-12-04T14:44","dateModified":"2023-12-15T19:19","image":{"@type":"ImageObject","url":"https://chimpino.com/media/website/CHIMPINO-png-cerna.png","height":1217,"width":1485},"description":"There are many GPT models to choose from. The AI plugin for Mautic was using several versions of GPT 3.5-turbo in the past. We've been testing v4 a couple months ago but it was way too slow and the results were worse than with version 3.5. The models evolve incredibly fast though, so we set down to compare them and find the best one for generating email content for Mautic.","author":{"@type":"Person","name":"Jan Linhart","url":"https://chimpino.com/authors/jan-linhart/"},"publisher":{"@type":"Organization","name":"Jan Linhart","logo":{"@type":"ImageObject","url":"https://chimpino.com/media/website/CHIMPINO-png-cerna.png","height":1217,"width":1485}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body><script>function activateTracking() {
+            (function (w, d, t, u, n, a, m) {
+                w['MauticTrackingObject'] = n;
+                w[n] = w[n] || function () { (w[n].q = w[n].q || []).push(arguments) }, a = d.createElement(t),
+                    m = d.getElementsByTagName(t)[0]; a.async = 1; a.src = u; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://m.chimpino.com/mtc.js', 'mt');
+            mt('send', 'pageview');
+        }</script><div class="site-container"><header class="top" id="js-header"><a class="logo" href="https://chimpino.com/"><img src="https://chimpino.com/media/website/CHIMPINO-png-cerna.png" alt="Chimpino" width="1485" height="1217"></a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://chimpino.com/" target="_self">Home</a></li><li><a href="https://chimpino.com/ai-plugin/" target="_self">AI Plugin</a></li><li><a href="https://chimpino.com/stripe-plugin/" target="_self">Stripe Plugin</a></li><li><a href="https://chimpino.com/themes/" target="_self">Themes</a></li><li><a href="https://chimpino.com/tags/blog/" target="_self">Blog</a></li><li class="has-submenu"><a href="https://chimpino.com/contacts/" target="_self" aria-haspopup="true">Contacts</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://chimpino.com/about-us/" title="About Us" target="_blank">About US</a></li><li><a href="https://chimpino.com/terms/" title="Terms" target="_self">Terms</a></li><li><a href="https://chimpino.com/contacts/" target="_self">Contact Us</a></li></ul></li></ul></nav></header><main><article class="post"><div class="hero"><header class="hero__content"><div class="wrapper"><h1>Comparing Open AI GPT models for email generation</h1></div></header></div><div class="wrapper post__entry"><p>There are many GPT models to choose from. The <a href="https://chimpino.com/ai-plugin/">AI plugin</a> for <a href="https://mautic.org">Mautic</a> was using several versions of GPT 3.5-turbo in the past. We've been testing v4 a couple months ago but it was way too slow and the results were worse than with version 3.5. The models evolve incredibly fast though, so we set down to compare them and find the best one for generating email content for Mautic.</p><h2>The prompt used for testing</h2><p>We used this same prompt for our GPT model testing:</p><p><code>Generate an email to promote a Stripe payment plugin allowing you to sell digital products in Mautic. Use tokens {contactfield=firstname}, {unsubscribe_text} and a call to action button with link to {pagelink=1}.</code></p><h2>GPT models</h2><p>Each model has pros and cons. The main problem we wanted to solve was that some models are getting end of life and they are often way too slow to work with.</p><h3>GPT 3.5</h3><p>The GPT-3.5 models possess the remarkable capability to generate code and exhibit a foundational understanding of various natural languages.</p><h4>gpt-3.5-turbo</h4><p>This model points to gpt-3.5-turbo-0613 which <strong>will not be supported after June 2024.</strong> The API response takes around 1 minute which is painful to work with and can lead to timeouts which degrades user experience. The training data here extends up to <strong>September 2021</strong>. The maximum token limit for processing stands at <strong>4,096</strong>, enabling the model to effectively handle inputs of a certain length or complexity.</p><p>Here is an example of generated email content.</p><figure class="post__image"><img loading="lazy" src="https://chimpino.com/media/posts/9/Screenshot-2023-12-14-at-12.44.03.png" alt="" width="1170" height="1102" sizes="100vw" srcset="https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.44.03-xs.png 300w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.44.03-sm.png 480w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.44.03-md.png 768w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.44.03-lg.png 1024w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.44.03-xl.png 1360w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.44.03-2xl.png 1600w"></figure><p>This is already a preview of the email so the unsubscribe token was replaced with the right text and the <code>{contactfield=firstname}</code> was switched to <code>[First Name]</code>. </p><p>Notice that the model suggested an image in the email but it cannot work with images so it leads to an example URL.</p><h4>gpt-3.5-turbo-1106</h4><p>Representing the most recent addition to the GPT 3.5 model family, this model has <strong>training data up to September 2021</strong>, aligning its knowledge with developments and information available until that period. Notably, this iteration features an expanded token limit, capable of processing a maximum of <strong>16,385 tokens</strong>, thus accommodating longer and more intricate inputs compared to prior models in the series.</p><p>Here is an example of generated email content.</p><figure class="post__image"><img loading="lazy" src="https://chimpino.com/media/posts/9/Screenshot-2023-12-14-at-12.48.57.png" alt="" width="1164" height="1264" sizes="100vw" srcset="https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.48.57-xs.png 300w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.48.57-sm.png 480w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.48.57-md.png 768w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.48.57-lg.png 1024w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.48.57-xl.png 1360w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.48.57-2xl.png 1600w"></figure><h3>GPT 4</h3><p>Model GPT-4 represents a significant advancement over GPT-3.5, offering enhanced capabilities and features. This iteration of the model introduces the ability to process both text and image inputs while producing text-based outputs. GPT 4 possesses an updated understanding of language nuances and trends, enabling it to tackle complex tasks more effectively. Its extended exposure to recent data enhances its adaptability and comprehension of contemporary information.</p><h4>gpt-4</h4><p>Model gpt-4 refers to gpt-4-0613. The model's training data includes information up to <strong>September 2021</strong>, providing a comprehensive understanding of language patterns and structures up to that point in time. This model is optimised to process a maximum of <strong>8,192 tokens</strong>.</p><p>Here is an example of generated email content.</p><figure class="post__image"><img loading="lazy" src="https://chimpino.com/media/posts/9/Screenshot-2023-12-14-at-12.54.45.png" alt="" width="1106" height="1446" sizes="100vw" srcset="https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.54.45-xs.png 300w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.54.45-sm.png 480w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.54.45-md.png 768w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.54.45-lg.png 1024w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.54.45-xl.png 1360w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.54.45-2xl.png 1600w"></figure><h4>gpt-4-1106-preview</h4><p>The most recent GPT-4 model increases such as refined instruction following, compatibility with JSON mode, outputs that can be reproduced consistently, and the capability for parallel function calling, among other improvements. It delivers a maximum of <strong>4,096 tokens</strong> in its standard output, providing concise yet informative responses. The model has been trained with data <strong>up to April 2023</strong>, ensuring it has an updated understanding of recent information and trends.</p><p>It's worth mentioning that this model is currently undergoing continuous development and refinement, thus <strong>not yet tailored for handling production-level traffic</strong>. For more extensive tasks or specialized applications, it has the capacity to process a maximum of 128,000 tokens, allowing for significantly longer text inputs and outputs.</p><p>Here is an example of generated email content.</p><figure class="post__image"><img loading="lazy" src="https://chimpino.com/media/posts/9/Screenshot-2023-12-14-at-12.50.12.png" alt="" width="1212" height="2070" sizes="100vw" srcset="https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.50.12-xs.png 300w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.50.12-sm.png 480w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.50.12-md.png 768w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.50.12-lg.png 1024w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.50.12-xl.png 1360w, https://chimpino.com/media/posts/9/responsive/Screenshot-2023-12-14-at-12.50.12-2xl.png 1600w"></figure><p>Interesting here is that this model is using a free service that can generate images in specific dimension. You can tell the previous models to use that service too, but this one is using it by itself. It also adds some color without asking for it.</p><h2>Testing the models</h2><p>In our test we took the same prompt and asked each model 6 times to generate an email. We were. mostly curious about:</p><ul><li>how long the prompt request takes,</li><li>how many tokens was used (prompt was the same: 154 tokens),</li><li>total cost for all used tokens with all prompt requests,</li><li>Quality of the generated email.</li></ul><table style="border-collapse: collapse; width: 100%; height: 452.235px; border-style: solid;" border="50" width="100%"><tbody><tr style="height: 49.3594px;"><td style="height: 49.3594px;" width="36"> </td><td class="align-center" style="height: 49.3594px;" colspan="2" width="182">gpt-3.5-turbo-0613</td><td class="align-center" style="height: 49.3594px;" colspan="2" width="166">gpt-3.5-turbo-1106</td><td class="align-center" style="height: 49.3594px;" colspan="2" width="166">gpt-4</td><td class="align-center" style="height: 49.3594px;" colspan="2" width="190">gpt-4-1106-preview</td></tr><tr style="height: 50.3594px;"><td style="height: 50.3594px;"> </td><td style="height: 50.3594px;">duration</td><td style="height: 50.3594px;">used tokens</td><td style="height: 50.3594px;">duration</td><td style="height: 50.3594px;">used tokens</td><td style="height: 50.3594px;">duration</td><td style="height: 50.3594px;">used tokens</td><td style="height: 50.3594px;">duration</td><td style="height: 50.3594px;">used tokens</td></tr><tr style="height: 50.3594px;"><td style="height: 50.3594px;">1.</td><td style="height: 50.3594px;">1,4 min</td><td style="height: 50.3594px;">049</td><td style="height: 50.3594px;">6,94 s</td><td style="height: 50.3594px;">449</td><td style="height: 50.3594px;">22,62 s</td><td style="height: 50.3594px;">563</td><td style="height: 50.3594px;">54,9 s</td><td style="height: 50.3594px;">751</td></tr><tr style="height: 50.3594px;"><td style="height: 50.3594px;">2.</td><td style="height: 50.3594px;">43,08 s</td><td style="height: 50.3594px;">472</td><td style="height: 50.3594px;">11,06 s</td><td style="height: 50.3594px;">648</td><td style="height: 50.3594px;">27,53 s</td><td style="height: 50.3594px;">620</td><td style="height: 50.3594px;">48,54 s</td><td style="height: 50.3594px;">727</td></tr><tr style="height: 50.3594px;"><td style="height: 50.3594px;">3.</td><td style="height: 50.3594px;">1,6 min</td><td style="height: 50.3594px;">923</td><td style="height: 50.3594px;">6,98 s</td><td style="height: 50.3594px;">427</td><td style="height: 50.3594px;">24,99 s</td><td style="height: 50.3594px;">613</td><td style="height: 50.3594px;">45,62 s</td><td style="height: 50.3594px;">676</td></tr><tr style="height: 50.3594px;"><td style="height: 50.3594px;">4.</td><td style="height: 50.3594px;">39,4 s</td><td style="height: 50.3594px;">822</td><td style="height: 50.3594px;">12,55 s</td><td style="height: 50.3594px;">570</td><td style="height: 50.3594px;">23,59 s</td><td style="height: 50.3594px;">608</td><td style="height: 50.3594px;">57,13 s</td><td style="height: 50.3594px;">716</td></tr><tr style="height: 50.3594px;"><td style="height: 50.3594px;">5.</td><td style="height: 50.3594px;">2,4 min</td><td style="height: 50.3594px;">1495</td><td style="height: 50.3594px;">12,15 s</td><td style="height: 50.3594px;">556</td><td style="height: 50.3594px;">20,13 s</td><td style="height: 50.3594px;">567</td><td style="height: 50.3594px;">41,41 s</td><td style="height: 50.3594px;">763</td></tr><tr style="height: 50.3594px;"><td style="height: 50.3594px;">6.</td><td style="height: 50.3594px;">36,26 s</td><td style="height: 50.3594px;">731</td><td style="height: 50.3594px;">7,65 s</td><td style="height: 50.3594px;">391</td><td style="height: 50.3594px;">21,42 s</td><td style="height: 50.3594px;">592</td><td style="height: 50.3594px;">52,33 s</td><td style="height: 50.3594px;">643</td></tr><tr style="height: 50.3594px;"><td style="height: 50.3594px;">cost</td><td style="height: 50.3594px;" colspan="2">0,02 USD</td><td style="height: 50.3594px;" colspan="2">0,02 USD</td><td style="height: 50.3594px;" colspan="2">0,09 USD</td><td style="height: 50.3594px;" colspan="2">0,11 USD</td></tr></tbody></table><p>The fastest is gpt-3.5-turbo-1106 and it uses smallest amount of tokens. Although you can tell how long you want the response and each model will try to give you the length you expect. The response is graphically simpler and cheaper than gpt-4-1106-preview, </p><table style="border-collapse: collapse; width: 132.336%;" border="20" width="1067"><tbody><tr><td style="width: 20.5819%;" width="145"> </td><td style="width: 18.1034%;" width="105">gpt-3.5-turbo</td><td style="width: 22.5216%;" width="109">gpt-3.5-turbo-1106</td><td style="width: 17.1352%;" width="136">gpt-4</td><td style="width: 21.6579%;" width="140">gpt-4-1106-preview</td></tr><tr><td style="width: 20.5819%;">cost per 1000 tokens</td><td style="width: 18.1034%;">0,003642 USD</td><td style="width: 22.5216%;">0,006577 USD</td><td style="width: 17.1352%;">0,006577 USD</td><td style="width: 21.6579%;">0,025725 USD</td></tr><tr><td style="width: 20.5819%;">average token usage</td><td style="width: 18.1034%;">915,33</td><td style="width: 22.5216%;">506,83</td><td style="width: 17.1352%;" width="136">593,83</td><td style="width: 21.6579%;">712,67</td></tr><tr><td style="width: 20.5819%;">average time </td><td style="width: 18.1034%;">73,79 s</td><td style="width: 22.5216%;">9,56 s</td><td style="width: 17.1352%;">23,38 s</td><td style="width: 21.6579%;">49,99 s</td></tr></tbody></table><p>The fastest model we tested is gpt-3.5-turbo-1106. If we consider that default timeout for HTTP requests is set to 30 seconds then gpt-3.5-turbo and gpt-4-1106-preview are unusable for our plugin unless you extend the timeout setting on your server.</p><figure class="post__image"><img loading="lazy" src="https://chimpino.com/media/posts/9/time_cost-3.png" alt="" width="2635" height="1210" sizes="100vw" srcset="https://chimpino.com/media/posts/9/responsive/time_cost-3-xs.png 300w, https://chimpino.com/media/posts/9/responsive/time_cost-3-sm.png 480w, https://chimpino.com/media/posts/9/responsive/time_cost-3-md.png 768w, https://chimpino.com/media/posts/9/responsive/time_cost-3-lg.png 1024w, https://chimpino.com/media/posts/9/responsive/time_cost-3-xl.png 1360w, https://chimpino.com/media/posts/9/responsive/time_cost-3-2xl.png 1600w"></figure><p>Token consumption is different for each model. The biggest consumption is with gpt-3.5-turbo and the lowest consumption uses gpt-3.5-turbo-1106.</p><figure class="post__image"><img loading="lazy" src="https://chimpino.com/media/posts/9/Total_token_usage-4.png" alt="" width="2658" height="1246" sizes="100vw" srcset="https://chimpino.com/media/posts/9/responsive/Total_token_usage-4-xs.png 300w, https://chimpino.com/media/posts/9/responsive/Total_token_usage-4-sm.png 480w, https://chimpino.com/media/posts/9/responsive/Total_token_usage-4-md.png 768w, https://chimpino.com/media/posts/9/responsive/Total_token_usage-4-lg.png 1024w, https://chimpino.com/media/posts/9/responsive/Total_token_usage-4-xl.png 1360w, https://chimpino.com/media/posts/9/responsive/Total_token_usage-4-2xl.png 1600w"></figure><p>In the following graph we multiplied the tokens used with the price per token to get price per request. We find it interesting to compare with the chart above.</p><figure class="post__image"><img loading="lazy" src="https://chimpino.com/media/posts/9/Total_cost.png" alt="" width="2672" height="1205" sizes="100vw" srcset="https://chimpino.com/media/posts/9/responsive/Total_cost-xs.png 300w, https://chimpino.com/media/posts/9/responsive/Total_cost-sm.png 480w, https://chimpino.com/media/posts/9/responsive/Total_cost-md.png 768w, https://chimpino.com/media/posts/9/responsive/Total_cost-lg.png 1024w, https://chimpino.com/media/posts/9/responsive/Total_cost-xl.png 1360w, https://chimpino.com/media/posts/9/responsive/Total_cost-2xl.png 1600w"></figure><h2>Conclusion</h2><p>It is hard to choose the right model for our <a href="https://chimpino.com/ai-plugin/">Mautic AI plugin</a>. Everyone may prefer different characteristics. We ended up <strong>adding an option for our users to choose the right model for them</strong> from newer models gpt-3.5-turbo-1106, gpt-4 and gpt-41106-preview to the plugin configuration. The default model is set to gpt-4.</p><p>Model GPT 3,5 Turbo (gpt-3.5-turbo-1106) responses are simpler and less graphic, responses took less time and less token usage. Responses from GPT 4 Turbo (gpt-4-1106-preview) are more advanced response and better graphics, but it is more expensive with more token usage.</p><p>Understanding the strengths and limitations of each model is crucial in harnessing the full potential of generative AI. We can't wait to hear from users of our <a href="https://chimpino.com/ai-plugin/">AI plugin</a> about what model they've chosen. The new version of the AI plugin is already available and all existing customers have received it.</p><p> </p></div></article></main><footer class="footer"><div class="footer__social"><a href="https://twitter.com/chimpinoteam" aria-label="Twitter"><svg><use xlink:href="https://chimpino.com/assets/svg/svg-map.svg#twitter"/></svg> </a><a href="https://www.linkedin.com/company/chimpinoteam" aria-label="LinkedIn"><svg><use xlink:href="https://chimpino.com/assets/svg/svg-map.svg#linkedin"/></svg> </a><a href="https://www.youtube.com/@chimpino" aria-label="Youtube"><svg><use xlink:href="https://chimpino.com/assets/svg/svg-map.svg#youtube"/></svg></a></div><div class="footer__copyright"><p>Powered by Publii</p></div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg><use xlink:href="https://chimpino.com/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script defer="defer" src="https://chimpino.com/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script><div class="pcb" data-behaviour="badge" data-behaviour-link="#cookie-settings" data-revision="1" data-config-ttl="90" data-debug-mode="false"><div role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="pcb-title" aria-describedby="pcb-txt" class="pcb__banner"><div class="pcb__inner"><div id="pcb-title" role="heading" aria-level="2" class="pcb__title">This website uses cookies</div><div id="pcb-txt" class="pcb__txt">Select which cookies to opt-in to via the checkboxes below; our website uses cookies to examine site traffic and user activity while on our site, for marketing, and to provide social media functionality.</div><div class="pcb__buttons"><button type="button" class="pcb__btn pcb__btn--link pcb__btn--configure" aria-haspopup="dialog">Manage preferences</button> <button type="button" class="pcb__btn pcb__btn--solid pcb__btn--accept">Accept all</button></div></div></div><div class="pcb__popup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="pcb-popup-title"><div class="pcb__popup__wrapper"><div class="pcb__inner pcb__popup__inner"><div class="pcb__popup__heading"><div id="pcb-popup-title" role="heading" aria-level="2" class="pcb__title">Cookie settings</div><button class="pcb__popup__close" aria-label="Close"></button></div><div class="pcb__popup__content"><div class="pcb__txt pcb__popup__txt">We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</div><ul class="pcb__groups"><li class="pcb__group"><details><summary class="pcb__group__title no-desc">Required</summary></details><div class="pcb__popup__switch is-checked"><input type="checkbox" data-group-name="" id="pcb-group-0" checked="checked"> <label for="pcb-group-0">Required</label></div></li></ul></div><div class="pcb__buttons pcb__popup__buttons"><button type="button" class="pcb__btn pcb__btn--solid pcb__btn--accept">Accept all</button> <button type="button" class="pcb__btn pcb__btn--reject">Reject all</button> <button type="button" class="pcb__btn pcb__btn--save">Save settings</button></div></div></div></div><div class="pcb__overlay" aria-hidden="true"></div><button class="pcb__badge" aria-label="Cookie Policy" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 23 23" fill="currentColor"><path d="M21.41 12.71c-.08-.01-.15 0-.22 0h-.03c-.03 0-.05 0-.08.01-.07 0-.13.01-.19.04-.52.21-1.44.19-2.02-.22-.44-.31-.65-.83-.62-1.53a.758.758 0 0 0-.27-.61.73.73 0 0 0-.65-.14c-1.98.51-3.49.23-4.26-.78-.82-1.08-.73-2.89.24-4.49.14-.23.14-.52 0-.75a.756.756 0 0 0-.67-.36c-.64.03-1.11-.1-1.31-.35-.19-.26-.13-.71-.01-1.29.04-.18.06-.38.03-.59-.05-.4-.4-.7-.81-.66C5.1 1.54 1 6.04 1 11.48 1 17.28 5.75 22 11.6 22c5.02 0 9.39-3.54 10.39-8.42.08-.4-.18-.78-.58-.87Zm-9.81 7.82c-5.03 0-9.12-4.06-9.12-9.06 0-4.34 3.05-8 7.25-8.86-.08.7.05 1.33.42 1.81.24.32.66.67 1.38.84-.76 1.86-.65 3.78.36 5.11.61.81 2.03 2 4.95 1.51.18.96.71 1.54 1.18 1.87.62.43 1.38.62 2.1.62.05 0 .09 0 .13-.01-1.23 3.64-4.7 6.18-8.64 6.18ZM13 17c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1Zm5.29-12.3a.99.99 0 0 1-.29-.71c0-.55.45-.99 1-.99a1 1 0 0 1 .71.3c.19.19.29.44.29.71 0 .55-.45.99-1 .99a1 1 0 0 1-.71-.3ZM9 13.5c0 .83-.67 1.5-1.5 1.5S6 14.33 6 13.5 6.67 12 7.5 12s1.5.67 1.5 1.5Zm3.25.81a.744.744 0 0 1-.06-1.05c.28-.32.75-.34 1.05-.06.31.28.33.75.05 1.06-.15.16-.35.25-.56.25-.18 0-.36-.06-.5-.19ZM8.68 7.26c.41.37.44 1 .07 1.41-.2.22-.47.33-.75.33a.96.96 0 0 1-.67-.26c-.41-.37-.44-1-.07-1.41.37-.42 1-.45 1.41-.08Zm11.48 1.88c.18-.19.52-.19.7 0 .05.04.09.1.11.16.03.06.04.12.04.19 0 .13-.05.26-.15.35-.09.1-.22.15-.35.15s-.26-.05-.35-.15a.355.355 0 0 1-.11-.16.433.433 0 0 1-.04-.19c0-.13.05-.26.15-.35Zm-4.93-1.86a.75.75 0 1 1 1.059-1.06.75.75 0 0 1-1.059 1.06Z"/></svg></button></div><script>(function(win) {
+    if (!document.querySelector('.pcb')) {
+        return;
+    }
+
+    var cbConfig = {
+        behaviour: document.querySelector('.pcb').getAttribute('data-behaviour'),
+        behaviourLink: document.querySelector('.pcb').getAttribute('data-behaviour-link'),
+        revision: document.querySelector('.pcb').getAttribute('data-revision'),
+        configTTL: parseInt(document.querySelector('.pcb').getAttribute('data-config-ttl'), 10),
+        debugMode: document.querySelector('.pcb').getAttribute('data-debug-mode') === 'true',
+        initialState: null,
+        previouslyAccepted: []
+    };
+
+    var cbUI = {
+        wrapper: document.querySelector('.pcb'),
+        banner: {
+            element: null,
+            btnAccept: null,
+            btnReject: null,
+            btnConfigure: null
+        },
+        popup: {
+            element: null,
+            btnClose: null,
+            btnSave: null,
+            btnAccept: null,
+            btnReject: null,
+            checkboxes: null,
+        },
+        overlay: null,
+        badge: null,
+        blockedScripts: document.querySelectorAll('script[type^="gdpr-blocker/"]'),
+        triggerLinks: cbConfig.behaviourLink ? document.querySelectorAll('a[href*="' + cbConfig.behaviourLink + '"]') : null
+    };
+
+    function initUI () {
+        // setup banner elements
+        cbUI.banner.element = cbUI.wrapper.querySelector('.pcb__banner');
+        cbUI.banner.btnAccept = cbUI.banner.element.querySelector('.pcb__btn--accept');
+        cbUI.banner.btnReject = cbUI.banner.element.querySelector('.pcb__btn--reject');
+        cbUI.banner.btnConfigure = cbUI.banner.element.querySelector('.pcb__btn--configure');
+
+        // setup popup elements
+        if (cbUI.wrapper.querySelector('.pcb__popup')) {
+            cbUI.popup.element = cbUI.wrapper.querySelector('.pcb__popup');
+            cbUI.popup.btnClose = cbUI.wrapper.querySelector('.pcb__popup__close');
+            cbUI.popup.btnSave = cbUI.popup.element.querySelector('.pcb__btn--save');
+            cbUI.popup.btnAccept = cbUI.popup.element.querySelector('.pcb__btn--accept');
+            cbUI.popup.btnReject = cbUI.popup.element.querySelector('.pcb__btn--reject');
+            cbUI.popup.checkboxes = cbUI.popup.element.querySelector('input[type="checkbox"]');
+            // setup overlay
+            cbUI.overlay = cbUI.wrapper.querySelector('.pcb__overlay');
+        }
+
+        cbUI.badge = cbUI.wrapper.querySelector('.pcb__badge');
+
+        if (cbConfig.behaviour.indexOf('link') > -1) {
+            for (var i = 0; i < cbUI.triggerLinks.length; i++) {
+                cbUI.triggerLinks[i].addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showBannerOrPopup();
+                });
+            }
+        }
+    }
+
+    function initState () {
+        var lsKeyName = getConfigName();
+        var currentConfig = localStorage.getItem(lsKeyName);
+        var configIsFresh = checkIfConfigIsFresh();
+
+        if (!configIsFresh || currentConfig === null) {
+            if (cbConfig.debugMode) {
+                console.log('🍪 Config not found, or configuration expired');
+            }
+
+            showBanner();
+        } else if (typeof currentConfig === 'string') {
+            if (cbConfig.debugMode) {
+                console.log('🍪 Config founded');
+            }
+
+            showBadge();
+
+            if (cbUI.popup.element) {
+                var allowedGroups = currentConfig.split(',');
+                var checkedCheckboxes = cbUI.popup.element.querySelectorAll('input[type="checkbox"]:checked');
+
+                for (var j = 0; j < checkedCheckboxes.length; j++) {
+                    var name = checkedCheckboxes[j].getAttribute('data-group-name');
+
+                    if (name && name !== '-' && allowedGroups.indexOf(name) === -1) {
+                        checkedCheckboxes[j].checked = false;
+                    }
+                }
+
+                for (var i = 0; i < allowedGroups.length; i++) {
+                    var checkbox = cbUI.popup.element.querySelector('input[type="checkbox"][data-group-name="' + allowedGroups[i] + '"]');
+
+                    if (checkbox) {
+                        checkbox.checked = true;
+                    }
+
+                    allowCookieGroup(allowedGroups[i]);
+                }
+            }
+        }
+
+        setTimeout(function () {
+            cbConfig.initialState = getInitialStateOfConsents();
+        }, 0);
+    }
+
+    function checkIfConfigIsFresh () {
+        var lastConfigSave = localStorage.getItem('publii-gdpr-cookies-config-save-date');
+
+        if (lastConfigSave === null) {
+            return false;
+        }
+
+        lastConfigSave = parseInt(lastConfigSave, 10);
+
+        if (lastConfigSave === 0) {
+            return true;
+        }
+
+        if (+new Date() - lastConfigSave < cbConfig.configTTL * 24 * 60 * 60 * 1000) {
+            return true;
+        }
+
+        return false;
+    }
+
+    function initBannerEvents () {
+        cbUI.banner.btnAccept.addEventListener('click', function (e) {
+            e.preventDefault();
+            acceptAllCookies('banner');
+            showBadge();
+        }, false);
+
+        if (cbUI.banner.btnReject) {
+            cbUI.banner.btnReject.addEventListener('click', function (e) {
+                e.preventDefault();
+                rejectAllCookies();
+                showBadge();
+            }, false);
+        }
+
+        if (cbUI.banner.btnConfigure) {
+            cbUI.banner.btnConfigure.addEventListener('click', function (e) {
+                e.preventDefault();
+                hideBanner();
+                showAdvancedPopup();
+                showBadge();
+            }, false);
+        }
+    }
+
+    function initPopupEvents () {
+        if (!cbUI.popup.element) {
+            return;
+        }
+
+        cbUI.overlay.addEventListener('click', function (e) {
+            hideAdvancedPopup();
+        }, false);
+
+        cbUI.popup.element.addEventListener('click', function (e) {
+            e.stopPropagation();
+        }, false);
+
+        cbUI.popup.btnAccept.addEventListener('click', function (e) {
+            e.preventDefault();
+            acceptAllCookies('popup');
+        }, false);
+
+        cbUI.popup.btnReject.addEventListener('click', function (e) {
+            e.preventDefault();
+            rejectAllCookies();
+        }, false);
+
+        cbUI.popup.btnSave.addEventListener('click', function (e) {
+            e.preventDefault();
+            saveConfiguration();
+        }, false);
+
+        cbUI.popup.btnClose.addEventListener('click', function (e) {
+            e.preventDefault();
+            hideAdvancedPopup();
+        }, false);
+    }
+
+    function initBadgeEvents () {
+        if (!cbUI.badge) {
+            return;
+        }
+
+        cbUI.badge.addEventListener('click', function (e) {
+            showBannerOrPopup();
+        }, false);
+    }
+
+    initUI();
+    initState();
+    initBannerEvents();
+    initPopupEvents();
+    initBadgeEvents();
+
+    /**
+     * API
+     */
+    function addScript (src, inline) {
+        var newScript = document.createElement('script');
+
+        if (src) {
+            newScript.setAttribute('src', src);
+        }
+
+        if (inline) {
+            newScript.text = inline;
+        }
+
+        document.body.appendChild(newScript);
+    }
+
+    function allowCookieGroup (allowedGroup) {
+        var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + allowedGroup + '"]');
+        cbConfig.previouslyAccepted.push(allowedGroup);
+    
+        for (var j = 0; j < scripts.length; j++) {
+            addScript(scripts[j].src, scripts[j].text);
+        }
+
+        var groupEvent = new Event('publii-cookie-banner-unblock-' + allowedGroup);
+        document.body.dispatchEvent(groupEvent);
+        unlockEmbeds(allowedGroup);
+
+        if (cbConfig.debugMode) {
+            console.log('🍪 Allowed group: ' + allowedGroup);
+        }
+    }
+
+    function showBannerOrPopup () {
+        if (cbUI.popup.element) {
+            showAdvancedPopup();
+        } else {
+            showBanner();
+        }
+    }
+
+    function showAdvancedPopup () {
+        cbUI.popup.element.classList.add('is-visible');
+        cbUI.overlay.classList.add('is-visible');
+        cbUI.popup.element.setAttribute('aria-hidden', 'false');
+        cbUI.overlay.setAttribute('aria-hidden', 'false');
+    }
+
+    function hideAdvancedPopup () {
+        cbUI.popup.element.classList.remove('is-visible');
+        cbUI.overlay.classList.remove('is-visible');
+        cbUI.popup.element.setAttribute('aria-hidden', 'true');
+        cbUI.overlay.setAttribute('aria-hidden', 'true');
+    }
+
+    function showBanner () {
+        cbUI.banner.element.classList.add('is-visible');
+        cbUI.banner.element.setAttribute('aria-hidden', 'false');
+    }
+
+    function hideBanner () {
+        cbUI.banner.element.classList.remove('is-visible');
+        cbUI.banner.element.setAttribute('aria-hidden', 'true');
+    }
+
+    function showBadge () {
+        if (!cbUI.badge) {
+            return;
+        }
+
+        cbUI.badge.classList.add('is-visible');
+        cbUI.badge.setAttribute('aria-hidden', 'false');
+    }
+
+    function getConfigName () {
+        var lsKeyName = 'publii-gdpr-allowed-cookies';
+
+        if (cbConfig.revision) {
+            lsKeyName = lsKeyName + '-v' + parseInt(cbConfig.revision, 10);
+        }
+
+        return lsKeyName;
+    }
+
+    function storeConfiguration (allowedGroups) {
+        var lsKeyName = getConfigName();
+        var dataToStore = allowedGroups.join(',');
+        localStorage.setItem(lsKeyName, dataToStore);
+
+        if (cbConfig.configTTL === 0) {
+            localStorage.setItem('publii-gdpr-cookies-config-save-date', 0);
+
+            if (cbConfig.debugMode) {
+                console.log('🍪 Store never expiring configuration');
+            }
+        } else {
+            localStorage.setItem('publii-gdpr-cookies-config-save-date', +new Date());
+        }
+    }
+
+    function getInitialStateOfConsents () {
+        if (!cbUI.popup.element) {
+            return [];
+        }
+
+        var checkedGroups = cbUI.popup.element.querySelectorAll('input[type="checkbox"]:checked');
+        var groups = [];
+
+        for (var i = 0; i < checkedGroups.length; i++) {
+            var allowedGroup = checkedGroups[i].getAttribute('data-group-name');
+
+            if (allowedGroup !== '') {
+                groups.push(allowedGroup);
+            }
+        }
+
+        if (cbConfig.debugMode) {
+            console.log('🍪 Initial state: ' + groups.join(', '));
+        }
+
+        return groups;
+    }
+
+    function getCurrentStateOfConsents () {
+        if (!cbUI.popup.element) {
+            return [];
+        }
+
+        var checkedGroups = cbUI.popup.element.querySelectorAll('input[type="checkbox"]:checked');
+        var groups = [];
+
+        for (var i = 0; i < checkedGroups.length; i++) {
+            var allowedGroup = checkedGroups[i].getAttribute('data-group-name');
+
+            if (allowedGroup !== '') {
+                groups.push(allowedGroup);
+            }
+        }
+
+        if (cbConfig.debugMode) {
+            console.log('🍪 State to save: ' + groups.join(', '));
+        }
+
+        return groups;
+    }
+
+    function getAllGroups () {
+        if (!cbUI.popup.element) {
+            return [];
+        }
+
+        var checkedGroups = cbUI.popup.element.querySelectorAll('input[type="checkbox"]');
+        var groups = [];
+
+        for (var i = 0; i < checkedGroups.length; i++) {
+            var allowedGroup = checkedGroups[i].getAttribute('data-group-name');
+
+            if (allowedGroup !== '') {
+                groups.push(allowedGroup);
+            }
+        }
+
+        return groups;
+    }
+
+    function acceptAllCookies (source) {
+        var groupsToAccept = getAllGroups();
+        storeConfiguration(groupsToAccept);
+
+        for (var i = 0; i < groupsToAccept.length; i++) {
+            var group = groupsToAccept[i];
+
+            if (cbConfig.initialState.indexOf(group) > -1 || cbConfig.previouslyAccepted.indexOf(group) > -1) {
+                if (cbConfig.debugMode) {
+                    console.log('🍪 Skip previously activated group: ' + group);
+                }
+
+                continue;
+            }
+
+            allowCookieGroup(group);
+        }
+
+        if (cbUI.popup.element) {
+            var checkboxesToCheck = cbUI.popup.element.querySelectorAll('input[type="checkbox"]');
+
+            for (var j = 0; j < checkboxesToCheck.length; j++) {
+                checkboxesToCheck[j].checked = true;
+            }
+        }
+
+        if (cbConfig.debugMode) {
+            console.log('🍪 Accept all cookies: ', groupsToAccept.join(', '));
+        }
+
+        if (source === 'popup') {
+            hideAdvancedPopup();
+        } else if (source === 'banner') {
+            hideBanner();
+        }
+    }
+
+    function rejectAllCookies () {
+        if (cbConfig.debugMode) {
+            console.log('🍪 Reject all cookies');
+        }
+
+        storeConfiguration([]);
+        setTimeout(function () {
+            window.location.reload();
+        }, 100);
+    }
+
+    function saveConfiguration () {
+        var groupsToAccept = getCurrentStateOfConsents();
+        storeConfiguration(groupsToAccept);
+
+        if (cbConfig.debugMode) {
+            console.log('🍪 Save new config: ', groupsToAccept.join(', '));
+        }
+
+        if (reloadIsNeeded(groupsToAccept)) {
+            setTimeout(function () {
+                window.location.reload();
+            }, 100);
+            return;
+        }
+
+        for (var i = 0; i < groupsToAccept.length; i++) {
+            var group = groupsToAccept[i];
+
+            if (cbConfig.initialState.indexOf(group) > -1 || cbConfig.previouslyAccepted.indexOf(group) > -1) {
+                if (cbConfig.debugMode) {
+                    console.log('🍪 Skip previously activated group: ' + group);
+                }
+
+                continue;
+            }
+
+            allowCookieGroup(group);
+        }
+
+        hideAdvancedPopup();
+    }
+
+    function reloadIsNeeded (groupsToAccept) {
+        // check if user rejected consent for initial groups
+        var initialGroups = cbConfig.initialState;
+        var previouslyAcceptedGroups = cbConfig.previouslyAccepted;
+        var groupsToCheck = initialGroups.concat(previouslyAcceptedGroups);
+
+        for (var i = 0; i < groupsToCheck.length; i++) {
+            var groupToCheck = groupsToCheck[i];
+
+            if (groupsToAccept.indexOf(groupToCheck) === -1) {
+                if (cbConfig.debugMode) {
+                    console.log('🍪 Reload is needed due lack of: ', groupToCheck);
+                }
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    function unlockEmbeds (cookieGroup) {
+        var iframesToUnlock = document.querySelectorAll('.pec-wrapper[data-consent-group-id="' + cookieGroup + '"]');
+
+        for (var i = 0; i < iframesToUnlock.length; i++) {
+            var iframeWrapper = iframesToUnlock[i];
+            iframeWrapper.querySelector('.pec-overlay').classList.remove('is-active');
+            iframeWrapper.querySelector('.pec-overlay').setAttribute('aria-hidden', 'true');
+            var iframe = iframeWrapper.querySelector('iframe');
+            iframe.setAttribute('src', iframe.getAttribute('data-consent-src'));
+        }
+    }
+
+    win.publiiEmbedConsentGiven = function (cookieGroup) {
+        // it will unlock embeds
+        allowCookieGroup(cookieGroup);
+
+        var checkbox = cbUI.popup.element.querySelector('input[type="checkbox"][data-group-name="' + cookieGroup + '"]');
+
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+
+        var groupsToAccept = getCurrentStateOfConsents();
+        storeConfiguration(groupsToAccept);
+
+        if (cbConfig.debugMode) {
+            console.log('🍪 Save new config: ', groupsToAccept.join(', '));
+        }
+    }
+})(window);</script></body></html>
