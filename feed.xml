@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2024-01-29T14:42:33+01:00</updated>
+    <updated>2024-01-29T14:56:46+01:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -257,7 +257,7 @@
         <link href="https://chimpino.com/home-2/"/>
         <id>https://chimpino.com/home-2/</id>
 
-        <updated>2024-01-29T14:42:33+01:00</updated>
+        <updated>2024-01-29T14:56:46+01:00</updated>
             <summary>
                 <![CDATA[
                     Our goal is to extend the Mautic's philosophy and automate the repetitive tasks so you could focus on the creative tasks. Live's too short. Automate the 🐵 tasks. We've prepared a few Mautic email and landing page themes for anyone to download for free. For&hellip;
@@ -265,8 +265,7 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <div id="home_part">
-<p>Our goal is to extend the <a href="https://mautic.org">Mautic's</a> philosophy and automate the repetitive tasks so you could <strong>focus on the creative tasks</strong>.</p>
+                <p>Our goal is to extend the <a href="https://mautic.org">Mautic's</a> philosophy and automate the repetitive tasks so you could <strong>focus on the creative tasks</strong>.</p>
 <blockquote>
 <p>Live's too short. Automate the <span title="monkey">🐵</span> tasks. </p>
 </blockquote>
@@ -302,7 +301,6 @@
 <p>We've prepared a few Mautic email and landing page themes for anyone to download for free. For example Air:</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://chimpino.com/media/posts/7/air-theme-2.png" alt="" width="567" height="640" sizes="100vw" srcset="https://chimpino.com/media/posts/7/responsive/air-theme-2-xs.png 300w ,https://chimpino.com/media/posts/7/responsive/air-theme-2-sm.png 480w ,https://chimpino.com/media/posts/7/responsive/air-theme-2-md.png 768w ,https://chimpino.com/media/posts/7/responsive/air-theme-2-lg.png 1024w ,https://chimpino.com/media/posts/7/responsive/air-theme-2-xl.png 1360w ,https://chimpino.com/media/posts/7/responsive/air-theme-2-2xl.png 1600w"></figure>
 <p class="align-center"><strong><a href="https://chimpino.com/themes/">All themes</a></strong></p>
-</div>
 </div>
             ]]>
         </content>
