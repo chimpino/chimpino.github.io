@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2024-01-29T14:56:46+01:00</updated>
+    <updated>2024-02-05T14:58:58+01:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -393,7 +393,7 @@
         <link href="https://chimpino.com/stripe-plugin/"/>
         <id>https://chimpino.com/stripe-plugin/</id>
 
-        <updated>2023-11-19T10:30:36+01:00</updated>
+        <updated>2024-02-05T14:58:58+01:00</updated>
             <summary>
                 <![CDATA[
                     Stripe Plugin will teach your Mautic to listen for payment events and react with campaign events. Help your team to automate payment processes and improve your customer experience at the same time. Forget about click-through rate or open rate. Payment rate is what really matters!&hellip;
@@ -453,7 +453,7 @@
 </ol>
 </div>
 <p>Notice that 6 new segments were created after successful installation. You can delete those you don't want. Nothing bad will happen. If the incoming Stripe event won't find the specific event, it will simply store itself without adding the contact to the segment. You may have to delete the segments you don't want after every plugin update, though.</p>
-<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-19-at-11.42.03.png" alt="" width="1970" height="588" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-19-at-11.42.03-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2024-02-05-at-14.54.34.png" alt="" width="1824" height="450" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.54.34-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.54.34-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.54.34-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.54.34-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.54.34-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.54.34-2xl.png 1600w"></figure>
 <h3>Configuration</h3>
 <p>Once the plugin is installed, go the plugins list. You should see the Stripe Plugin within your other plugins. Save your <a href="https://dashboard.stripe.com/test/apikeys">test</a> and <a href="https://dashboard.stripe.com/apikeys">production</a> Secret keys. The plugin allows you to switch between the two so you can click one button to go live.</p>
 <h4>Magic Stripe segments</h4>
@@ -461,8 +461,6 @@
 <ul class="container">
 <li>customer.created,</li>
 <li>customer.updated,</li>
-<li>customer.subscription.created,</li>
-<li>customer.subscription.updated,</li>
 <li>invoice.paid.</li>
 </ul>
 <p>Check the <a href="https://stripe.com/docs/api/events/types" target="_blank" rel="noopener noreferrer">Stripe docs</a> for more details.</p>
@@ -472,9 +470,9 @@
 <p>Add an endpoint. A new window will open for you.</p>
 <p>Endpoint URL is the URL address where you have your Mautic instance and ends with <code><span style="color: #000000;">/stripe/webhook</span></code>.</p>
 <p>For example: <code>https://my.mautic.com/stripe/webhook</code></p>
-<p>You can describe what are you exactly testing. Choose Listen to option "Event on your account". Then what events should be listen to in the option:  Select events to listen to. New window will open, where you can choose what you want to listen to (<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.created, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.updated, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.subscription.created, </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">customer.subscription.updated or </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">invoice.paid).</span></p>
+<p>You can describe what are you exactly testing. Choose Listen to option "Event on your account". Then what events should be listen to in the option:  Select events to listen to. New window will open, where you can choose what you want to listen to <span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">invoice.paid.</span></p>
 <p> </p>
-<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2023-10-23-at-13.15.32.png" alt="" width="455" height="531" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2023-10-23-at-13.15.32-2xl.png 1600w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://chimpino.com/media/posts/4/Screenshot-2024-02-05-at-14.57.43.png" alt="" width="522" height="625" sizes="100vw" srcset="https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.57.43-xs.png 300w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.57.43-sm.png 480w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.57.43-md.png 768w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.57.43-lg.png 1024w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.57.43-xl.png 1360w ,https://chimpino.com/media/posts/4/responsive/Screenshot-2024-02-05-at-14.57.43-2xl.png 1600w"></figure>
 <p>With this set up you can go to your Mautic instance and in the menu choose Components. There is Landing pages option. Create new Landing page and insert tokens to builder. You can embed a <strong><span style="color: #faa90f;">pricing table</span></strong> by inserting this token in to the builder.</p>
 <h5><span style="color: #faa90f;">Pricing table token</span></h5>
 <p>The token consists of 2 variable values: <code>tableid</code> and <code>key</code></p>
