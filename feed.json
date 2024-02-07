@@ -11,6 +11,21 @@
     },
     "items": [
         {
+            "id": "https://chimpino.com/chat-gpt-generated-email-for-travel-agency/",
+            "url": "https://chimpino.com/chat-gpt-generated-email-for-travel-agency/",
+            "title": "Chat GPT generated email for Travel Agency",
+            "summary": "Imagine you are a travel agency who wants to write email with interesting places and tips happening in Prague. You can generate it with our AI plugin for Mautic. Prompt can be for example like this: Generate an email with detailed information about Prague, Czech&hellip;",
+            "content_html": "<p>Imagine you are a travel agency who wants to write email with interesting places and tips happening in Prague. You can generate it with our <a href=\"https://chimpino.com/ai-plugin/\" target=\"_blank\" rel=\"noopener noreferrer\">AI plugin</a> for <a href=\"https://mautic.org\">Mautic</a>.</p>\n<p>Prompt can be for example like this:</p>\n<p>Generate an email with detailed information about Prague, Czech republic for tourist trip in June. Find what is usually happening there in June and describe it.<br>Add call to action button</p>\n<p>Use these tokens {contactfield=firstname}, {unsubscribe_text} </p>\n<p>Chat GPT response can looks like this:</p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://chimpino.com/media/posts/10/Screenshot-2024-02-07-at-11.45.27.png\" alt=\"\" width=\"1746\" height=\"1946\" sizes=\"100vw\" srcset=\"https://chimpino.com/media/posts/10/responsive/Screenshot-2024-02-07-at-11.45.27-xs.png 300w ,https://chimpino.com/media/posts/10/responsive/Screenshot-2024-02-07-at-11.45.27-sm.png 480w ,https://chimpino.com/media/posts/10/responsive/Screenshot-2024-02-07-at-11.45.27-md.png 768w ,https://chimpino.com/media/posts/10/responsive/Screenshot-2024-02-07-at-11.45.27-lg.png 1024w ,https://chimpino.com/media/posts/10/responsive/Screenshot-2024-02-07-at-11.45.27-xl.png 1360w ,https://chimpino.com/media/posts/10/responsive/Screenshot-2024-02-07-at-11.45.27-2xl.png 1600w\"></figure>\n<p>PS: You can fine tune AI response in the Email Builder.</p>\n<p>For more information about <a href=\"https://chimpino.com/ai-plugin/\" target=\"_blank\" rel=\"noopener noreferrer\">AI plugin</a> and more let's check it <a href=\"https://chimpino.com/home-2/\">here</a>.</p>",
+            "author": {
+                "name": "Jan Linhart"
+            },
+            "tags": [
+                   "Blog"
+            ],
+            "date_published": "2024-02-07T11:26:59+01:00",
+            "date_modified": "2024-02-07T11:55:14+01:00"
+        },
+        {
             "id": "https://chimpino.com/comparing-open-ai-gpt-models-for-email-generation/",
             "url": "https://chimpino.com/comparing-open-ai-gpt-models-for-email-generation/",
             "title": "Comparing Open AI GPT models for email generation",
@@ -23,7 +38,7 @@
                    "Blog"
             ],
             "date_published": "2023-12-04T14:44:24+01:00",
-            "date_modified": "2024-01-12T08:54:51+01:00"
+            "date_modified": "2024-02-07T11:51:00+01:00"
         },
         {
             "id": "https://chimpino.com/themes/",
