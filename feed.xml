@@ -3,7 +3,7 @@
     <title>Chimpino</title>
     <link href="https://chimpino.com/feed.xml" rel="self" />
     <link href="https://chimpino.com" />
-    <updated>2024-02-19T14:13:20+01:00</updated>
+    <updated>2024-02-19T14:16:46+01:00</updated>
     <author>
         <name>Jan Linhart</name>
     </author>
@@ -14,11 +14,11 @@
         <author>
             <name>Jan Linhart</name>
         </author>
-        <link href="https://chimpino.com/chat-gpt-generated-email-for-travel-agency-2/"/>
-        <id>https://chimpino.com/chat-gpt-generated-email-for-travel-agency-2/</id>
+        <link href="https://chimpino.com/chat-gpt-generated-email-training-invitation/"/>
+        <id>https://chimpino.com/chat-gpt-generated-email-training-invitation/</id>
             <category term="Blog"/>
 
-        <updated>2024-02-19T14:13:20+01:00</updated>
+        <updated>2024-02-19T14:16:46+01:00</updated>
             <summary>
                 <![CDATA[
                     You need to invite all payroll accountants for new payroll software training in your corporation. Mautic's AI plugin helps you generate an email for you. Prompt can be for example like this: Generate an email invitation for new payroll software training with a two-day training&hellip;
